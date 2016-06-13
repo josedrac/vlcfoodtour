@@ -1,0 +1,121 @@
+
+@media only screen and (min-width:768px){
+    .menu.hide-desktop {
+        display: none !important;
+    }
+    #footer .footer-widgets-wrapper .dt-sc-one-fourth {
+        width: 25%;
+    }
+    #footer .footer-widgets-wrapper .dt-sc-one-fourth.column {
+        margin-left: 2.1%;
+    }
+    #footer .footer-widgets-wrapper .dt-sc-one-fourth.first {
+        width: 18.5%;
+    }
+    #footer .footer-widgets-wrapper .dt-sc-one-fourth.first.column {
+        margin-left: 0%;
+    }
+}
+
+/* CSS Document */
+@media only screen and (min-width:1120px) and (max-width:1280px) {
+
+}
+/*----*****---- << Tablet (Portrait) >> ----*****----*/
+/* Note: Design for a width of 768px, Gutter: 30px, Unit: 32px */
+@media only screen and (min-width:768px) and (max-width:959px) {
+    #main-menu {
+        width: 85%;
+        top: 0;
+        float: right;
+    }
+    .learnmore-button {
+        margin-bottom: 15px;
+    }
+    .sfbp--theme-4 .sfbp-list li a {
+        margin-bottom: 6px;
+    }
+}
+/*----*****---- << Mobile (Landscape) >> ----*****----*/
+/* Note: Design for a width of 480px */
+@media only screen and (max-width:767px) {
+/*@media only screen and (min-width: 480px) and (max-width: 767px) {*/
+    #logo {
+        display:none;
+    }
+    #main-menu {
+        top: 0px;
+        padding: 0;
+    }
+    #main-menu > ul.menu {
+        margin-bottom: 10px;
+    }
+    #main-menu > ul.menu > li > a {
+        color: #62a5a1 !important;
+    }
+    #main-menu ul li.current_page_item a,
+    #main-menu > ul.menu > li > a:active {
+        color: #a3865b !important;
+        text-decoration: none !important;
+    }
+    #main-menu ul.menu > li {
+        border-top: 1px solid #62a5a1;
+    }
+    #header .container {
+	    width: 100%;
+	}
+    .menu-idioma,
+    #logo {
+        display:none;
+    }
+    .dt-menu-toggle {
+        padding: 6px 15px 0 15px;
+    }
+
+    .fullwidth-section.grey-bg {
+        padding: 20px 0;
+    }
+
+    .learnmore-button {
+        padding: 11px 24px 11px 24px !important;
+        margin-left: 14px !important;
+    }
+
+    .dt-sc-button {
+        margin-bottom: 15px;
+    }
+
+    .section-title {
+        height: auto !important;
+    }
+
+    .dt-menu-toggle-icon {
+        margin-top: 22px;
+    }
+
+    .blog-entry-inner, .dt-sc-one-third .blog-entry-inner {
+        padding-left: 0;
+    }
+
+
+}
+/*----*****---- << Mobile >> ----*****----*/
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+
+}
+/*----*****---- << Mobile >> ----*****----*/
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 319px) {
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (min-width: 320px) and (max-width: 360px) {
+
+	.container { width:300px; }
+}
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+
+	.container { width:350px; }
+}
