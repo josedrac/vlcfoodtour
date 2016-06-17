@@ -577,3 +577,266 @@ input[type="submit"], button:hover, input[type="button"]:hover, .subscribe-frm i
 
 
 /* end plugin cookie */
+
+
+/* calendar */
+#eztixIntegratedCalendar{
+font-family: Century Gothic,Arial,Helvetica,sans-serif;
+font-size: 1em;
+color: #555;
+border: 1px solid #ccc;
+padding: 2px;
+background-color: #f0f0f0;
+}
+
+#eztixIntegratedCalendar #calNav{
+text-align: center;
+}
+
+#eztixIntegratedCalendar #calNav select{
+width: inherit !important;
+}
+
+#eztixIntegratedCalendar #calNav select#calLangSelect{
+float: left;
+}
+
+#eztixIntegratedCalendar #calNav select#calMonthSelect{
+float: right;
+}
+
+#eztixIntegratedCalendar #calNav h3{
+font-size: 1.1em;
+margin: 6px;
+}
+
+#eztixIntegratedCalendar .calMonthTable{
+width: 100%;
+border-collapse: separate;
+border-spacing: 1px;
+clear: both;
+table-layout: fixed;
+}
+
+#eztixIntegratedCalendar .calMonthTable th{
+font-size: 1em;
+border: none;
+text-align: center;
+}
+
+#eztixIntegratedCalendar .calMonthTable td{
+font-size: 0.9em;
+border: 1px solid #ccc;
+background-color: #fff;
+vertical-align: top;
+padding: 0;
+}
+
+#eztixIntegratedCalendar .calMonthTable.remote td.past{
+color: #ccc;
+}
+
+#eztixIntegratedCalendar .calMonthTable.ocp .soldOut{
+font-weight: normal;
+color: inherit;
+}
+
+#eztixIntegratedCalendar .calMonthTable.ocp a.soldOut{
+color: red;
+}
+
+#eztixIntegratedCalendar .calMonthTable td.empty{
+border-color: transparent;
+background-color: transparent;
+}
+
+#eztixIntegratedCalendar .calMonthTable .dayInner{
+padding: 4px;
+}
+
+#eztixIntegratedCalendar .calMonthTable .dayNum{
+padding: 4px;
+text-align: right;
+font-size: 1.1em;
+font-style: italic;
+font-weight: bold;
+text-shadow: 1px 1px 0 #FAFAFA;
+background: #ccc; /* Old browsers */
+background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+
+#eztixIntegratedCalendar .calMonthTable td.past .dayNum{
+color: #555;
+background: none;
+background-color: #ccc;
+text-shadow: none;
+}
+
+#eztixIntegratedCalendar .calMonthTable td.empty .dayNum{
+background: none;
+background-color: transparent;
+color: transparent;
+text-shadow: none;
+}
+
+#eztixIntegratedCalendar .calMonthTable h6{
+font-size: 0.9em;
+margin: 0 0 4px;
+}
+
+#eztixIntegratedCalendar .calMonthTable ul{
+list-style: none;
+margin: 0;
+padding: 0;
+font-size: 0.8em;
+overflow: visible;
+}
+
+#eztixIntegratedCalendar .calMonthTable ul li{
+position: relative;
+overflow: visible !important;
+padding-left: 6px;
+}
+
+#eztixIntegratedCalendar .calMonthTable .placeholder{
+height: 12px;
+}
+
+#eztixIntegratedCalendar .eventDialog{
+display: none;
+border: 1px solid #ccc;
+box-shadow: -3px 3px 2px 0px rgba(0,0,0,0.2);
+padding: 8px 4px 4px;
+background-color: #fff;
+position: absolute;
+top: -4px;
+left: 66px;
+z-index: 100;
+width: 200%;
+}
+
+#eztixIntegratedCalendar .eventDialog .closeDialog{
+float: right;
+margin: -4px 0 4px;
+border: 1px solid #ccc;
+padding: 0 4px;
+text-decoration: none;
+text-align: center;
+font-weight: bold;
+color: inherit;
+}
+
+#eztixIntegratedCalendar .eventDialog h7{
+font-weight: bold;
+}
+
+#eztixIntegratedCalendar .eventDialog .calDesc{
+margin: 6px 0;
+}
+
+#eztixIntegratedCalendar .eventDialog p{
+margin: 0;
+padding: 0;
+}
+
+#eztixIntegratedCalendar .eventDialog .calDesc p{
+margin: 0;
+padding: 0;
+}
+
+/* OCP Calendar Styles */
+#tourGuideToggle {
+margin-top: -32px;
+margin-left: 20px;
+float: left;
+font-size: 10px;
+text-transform: uppercase;
+}
+#eztixIntegratedCalendar .calMonthTable.ocp ul li {
+padding: 0px;
+}
+#eztixIntegratedCalendar .calMonthTable.ocp ul li a.eventDateLink {
+display: block;
+padding: 0px 3px;
+border: 1px solid transparent;
+border-left: 2px solid transparent;
+color: inherit;
+}
+#eztixIntegratedCalendar .calMonthTable.ocp ul li a.eventDateLink:hover {
+border-top: 1px solid #666;
+border-right: 1px solid #666;
+border-bottom: 1px solid #666;
+opacity: 0.7;
+}
+#eztixIntegratedCalendar .calMonthTable.ocp ul li a.eventDateLink div.eventDateLink {
+float: left;
+}
+#eztixIntegratedCalendar .calMonthTable.ocp ul li a.eventDateLink div.eventTicketLevels {
+float: right;
+}
+#eztixIntegratedCalendar .calMonthTable.ocp ul li a.eventDateLink div.eventTourGuides {
+font-size: 10px;
+color: #adadad;
+}
+
+
+
+
+#eztixIntegratedCalendar .calMonthTable.ocp ul li a.eventDateLink.statusPrivate {
+border-left: 2px solid blue;
+}
+#eztixIntegratedCalendar .calMonthTable.ocp ul li a.eventDateLink.statusPrivate .eventTicketLevels {
+color: blue;
+text-transform: uppercase;
+}
+#eztixIntegratedCalendar .calMonthTable.ocp ul li a.eventDateLink.statusPrivate .eventPrivate {
+text-transform: uppercase;
+font-size: 10px;
+font-style: italic;
+}
+
+#eztixIntegratedCalendar .calMonthTable.ocp ul li a.eventDateLink.statusPending {
+border-left: 2px solid #adadad;
+}
+#eztixIntegratedCalendar .calMonthTable.ocp ul li a.eventDateLink.statusPending .eventTicketLevels {
+color: #adadad;
+text-transform: uppercase;
+}
+
+#eztixIntegratedCalendar .calMonthTable.ocp ul li a.eventDateLink.soldOut {
+border-left: 2px solid red;
+color: inherit;
+}
+#eztixIntegratedCalendar .calMonthTable.ocp ul li a.eventDateLink.soldOut .eventTicketLevels {
+color: red;
+text-transform: uppercase;
+}
+
+#eztixIntegratedCalendar .calMonthTable.ocp ul li a.eventDateLink.availabilityHigh {
+border-left: 2px solid #00BF07;
+color: inherit;
+}
+#eztixIntegratedCalendar .calMonthTable.ocp ul li a.eventDateLink.availabilityHigh .eventTicketLevels {
+color: #00BF07;
+text-transform: uppercase;
+}
+
+#eztixIntegratedCalendar .calMonthTable.ocp ul li a.eventDateLink.availabilityLow {
+border-left: 2px solid orange;
+color: inherit;
+}
+#eztixIntegratedCalendar .calMonthTable.ocp ul li a.eventDateLink.availabilityLow .eventTicketLevels {
+color: orange;
+text-transform: uppercase;
+}
+
+#kioskModalBoxIframe html {
+    font-family: arial !important;
+}
+/* end calendar */
