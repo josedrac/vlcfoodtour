@@ -7,4 +7,9 @@
 
 //wp-content/plugins/pipdig-snapcode-widget/pipdig-snapcode-widget.php
 //wp-content/plugins/recent-tweets-widget/widget.php
+
+//wp-content/themes/trendytravel/styles.css
+
+
+//wp-content/plugins/designthemes-core-features/shortcodes/shortcodes.php
 ?>

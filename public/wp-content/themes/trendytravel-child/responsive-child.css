@@ -97,6 +97,29 @@
         padding-left: 0;
     }
 
+    /* EZTix Calendar */
+    #eztixIntegratedCalendar table.calMonthTable.remote thead {
+      display: none;
+    }
+    #eztixIntegratedCalendar table.calMonthTable.remote tbody td {
+      position: relative;
+      width: 100%;
+      display: block;
+    }
+    #eztixIntegratedCalendar table.calMonthTable.remote tbody td.future.empty {
+      display: none;
+    }
+    #eztixIntegratedCalendar .calMonthTable .dayNum {
+      text-align:left
+    }
+    #eztixIntegratedCalendar .calMonthTable.remote td.past {
+      display: none;
+    }
+    #eztixIntegratedCalendar #calNav {
+      text-align: center;
+      width: 100%;
+    }
+
 
 }
 /*----*****---- << Mobile >> ----*****----*/
@@ -118,4 +141,18 @@
 @media only screen and (min-width: 360px) and (max-width: 479px) {
 
 	.container { width:350px; }
+}
+
+
+@media only screen and (max-width: 480px)
+{
+	/*.dt-menu-toggle-icon-book-now-link {
+    font-size:20px;
+  }
+	.dt_sc_image_box-blurb {
+    font-size: 15px;
+  }
+	.styledHeaderH1,
+  .styledHeaderH2 { border-bottom: 0px double #EBBA53; }
+	#book-now-word-now {display:none}*/
 }

@@ -21,6 +21,17 @@
 	#Load Theme Styles...
 	if(dt_theme_option('integration', 'enable-header-code') != '') echo '<script type="text/javascript">'.wp_kses(stripslashes(dt_theme_option('integration', 'header-code')), $dt_allowed_html_tags).'</script>';
 	wp_head(); ?>
+
+	<script id="eztixKioskLinkId" type="text/javascript">
+    (function(){
+        var ezLoad = document.createElement('script');
+        ezLoad.type = 'text/javascript';
+        ezLoad.src = 'https://kiosk.eztix.co/js/ver' + parseInt(Math.random() * 2147483647) + '/kioskIntegrated/kioskIntegratedExtLoader.js';
+        var s = document.getElementById('eztixKioskLinkId');
+        s.parentNode.insertBefore(ezLoad, s.nextSibling);
+    })();
+</script>
+
 </head>
 
 <body <?php if(dt_theme_option("appearance","layout") == "boxed") body_class('boxed'); else body_class(); ?>>

@@ -619,14 +619,15 @@ table-layout: fixed;
 }
 
 #eztixIntegratedCalendar .calMonthTable th{
-font-size: 1em;
-border: none;
-text-align: center;
+  font-size: 16px;
+  border: none;
+  text-align: center;
+  padding: 5px;
 }
 
 #eztixIntegratedCalendar .calMonthTable td{
 font-size: 0.9em;
-border: 1px solid #ccc;
+border: 1px solid transparent;
 background-color: #fff;
 vertical-align: top;
 padding: 0;
@@ -646,8 +647,8 @@ color: red;
 }
 
 #eztixIntegratedCalendar .calMonthTable td.empty{
-border-color: transparent;
-background-color: transparent;
+  /*border-color: transparent;*/
+  background-color: transparent;
 }
 
 #eztixIntegratedCalendar .calMonthTable .dayInner{
@@ -660,21 +661,15 @@ text-align: right;
 font-size: 1.1em;
 font-style: italic;
 font-weight: bold;
-text-shadow: 1px 1px 0 #FAFAFA;
-background: #ccc; /* Old browsers */
-background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
-background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+color: #000;
+background: #62A5A1;
+
 }
 
 #eztixIntegratedCalendar .calMonthTable td.past .dayNum{
 color: #555;
 background: none;
-background-color: #ccc;
+background-color: transparent;
 text-shadow: none;
 }
 
@@ -705,7 +700,8 @@ padding-left: 6px;
 }
 
 #eztixIntegratedCalendar .calMonthTable .placeholder{
-height: 12px;
+  height: 12px;
+  min-height: 70px;
 }
 
 #eztixIntegratedCalendar .eventDialog{
@@ -752,14 +748,14 @@ padding: 0;
 
 /* OCP Calendar Styles */
 #tourGuideToggle {
-margin-top: -32px;
-margin-left: 20px;
-float: left;
-font-size: 10px;
-text-transform: uppercase;
+  margin-top: -32px;
+  margin-left: 20px;
+  float: left;
+  font-size: 10px;
+  text-transform: uppercase;
 }
 #eztixIntegratedCalendar .calMonthTable.ocp ul li {
-padding: 0px;
+  padding: 0px;
 }
 #eztixIntegratedCalendar .calMonthTable.ocp ul li a.eventDateLink {
 display: block;
@@ -836,7 +832,59 @@ color: orange;
 text-transform: uppercase;
 }
 
-#kioskModalBoxIframe html {
-    font-family: arial !important;
+.calMonthTable th {    color: #4e8481;    background-color: white;}
+select#calMonthSelect {    background-color: #a3865b; color: white;}
+.dayInner a {    color: rgb(245, 69, 78); font-size: 12px;}
+.dayInner ul li {    color: #666; font-size: 12px;}
+#eztixIntegratedCalendar .calMonthTable .dayInner h6 {    font-size: 14px;font-weight: bold; }
+select#calMonthSelect {
+  width: 300px;
+  -webkit-appearance: dump;
+  -webkit-appearance: menulist;
+  -moz-appearance:menulist;
+  border-radius: 2px;}
+#eztixIntegratedCalendar #calNav {
+  width: 300px;
+  margin: auto;
+  background-color: transparent;
+  height: 42px;
 }
+#eztixIntegratedCalendar{
+  border-radius: 2px;
+  padding: 0 20px;
+}
+#eztixIntegratedCalendar .calMonthTable .dayInner {text-align: left;}
+
+#dropDownToursMenu {min-height: 150px; width:100%; background-color: black;    overflow: inherit;}
+
+#dropDownToursMenu {
+    background-color: #4e8481;
+    padding-top:30px;
+    display: inline-block;
+}
+
+#dropDownToursMenu h2 {color:white; min-height: 75px; }
+
+#dropDownToursMenu .experience-block {
+	color:white;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+#dropDownToursMenu .experience-block .content { padding:10px; min-height:150px}
+
+#dropDownToursMenu .excerpt, #dropDownToursMenu .price ,#dropDownToursMenu .click-to-action, #dropDownToursMenu .schedule{
+    color: white;
+}
+
+#dropDownToursMenu .click-to-action span a{
+	margin-top: 15px;
+	font-family: oswald;
+    font-size: 20px;
+    color: white;
+    line-height: normal;
+}
+
+#dropDownToursMenu .close, #dropDownToursMenu .close i{color:white;  margin: 0px;}
+
 /* end calendar */
