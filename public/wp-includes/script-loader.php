@@ -263,6 +263,7 @@ function wp_default_scripts( &$scripts ) {
 
 	$scripts->add( 'jcrop', "/wp-includes/js/jcrop/jquery.Jcrop.min.js", array('jquery'), '0.9.12');
 
+
 	$scripts->add( 'swfobject', "/wp-includes/js/swfobject.js", array(), '2.2-20120417');
 
 	// error message for both plupload and swfupload
