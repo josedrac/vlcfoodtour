@@ -12,4 +12,8 @@
 
 
 //wp-content/plugins/designthemes-core-features/shortcodes/shortcodes.php
+
+//wp-content/plugins/designthemes-core-features/shortcodes/css/shortcodes.css
+//wp-content/plugins/designthemes-core-features/shortcodes/shortcodes.php
+
 ?>

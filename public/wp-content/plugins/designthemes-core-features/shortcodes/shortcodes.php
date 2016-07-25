@@ -709,7 +709,8 @@ class DTCoreShortcodesDefination {
 				'button_text'=> __('Purchase Now','dt_themes'),
 				'icon' =>'',
 				'target' => '',
-				'class' => ''
+				'class' => '',
+				'link_user_name' => ''
 		), $attrs ) );
 
 		$attribute = !empty($icon) ? "class='dt-sc-callout-box with-icon {$type} {$class}' " :" class='dt-sc-callout-box {$type} {$class}' ";
@@ -718,7 +719,7 @@ class DTCoreShortcodesDefination {
 
 		$content = DTCoreShortcodesDefination::dtShortcodeHelper ( $content );
 
-		$out1 = ""; $out2 = "";
+		$out1 = ""; $out2 = ""; $out3 = "";
 
 		$out1 = ( !empty( $title ) ) ? "<h2>{$title}</h2>" : "";
 
@@ -729,17 +730,26 @@ class DTCoreShortcodesDefination {
 		endif;
 		$out1 .= $content;
 
-		if($type != 'type1' and $type != 'type2' and $type != 'type4') {
+		if($type != 'type1' and $type != 'type2' and $type != 'type4' and $type != 'type6') {
 			$out1 = '<div class="column dt-sc-four-fifth first">'.$out1.'</div>';
 		}
 
-		$out2 = ( !empty($link) ) ? "<a href='{$link}' class='dt-sc-button small' {$target}>{$button_text}</a>" : "";
+		$out2 = ( !empty($link) and $type!='type6' ) ? "<a href='{$link}' class='dt-sc-button small' {$target}>{$button_text}</a>" : "";
 
 		if($type != 'type1' and $type != 'type2' and $type != 'type4') {
 			$out2 = '<div class="column dt-sc-one-fifth">'.$out2.'</div>';
 		}
 
-		return "<div {$attribute}>".$out1.$out2."</div>";
+		if($type == 'type6') {
+			//$out2 = '<div class="column dt-sc-one-fifth">'.$out2.'</div>';
+			//$out1 = '<div class="column dt-sc-four-fifth first">'.$out1;
+//			$out2 = '<div class="member_info"><div class="memberOverlayLink" data-anchorwidth="90"><div class="avatar"><img src="https://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9d/avatar068.jpg" class="avatar potentialFacebookAvatar" width="74" height="74"></div><div class="username mo"><span class="expand_inline scrname"> msjanechu...</span></div></div><div class="location">Sunnyvale, California</div></div>';
+			$out2 = '<div class="member_info"><div class="memberOverlayLink" data-anchorwidth="90"><div class="avatar"><img src="https://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9d/avatar068.jpg" class="avatar potentialFacebookAvatar" width="74" height="74"></div><div class="info_usuername"><span class="expand_inline scrname"> msjanechu...</span><span class="location">Sunnyvale, California</span></div></div></div>';
+
+			//$out3 = '</div>';
+		}
+
+		return "<div {$attribute}>".$out1.$out2.$out3."</div>";
 	}
 
 	/**
