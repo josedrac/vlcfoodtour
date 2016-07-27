@@ -156,13 +156,13 @@ H3 {
 
 .touricons-block {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: inline-block;
     width: 100%;
 }
 
   .touricons-block .dt-sc-one-fourth {
-    width: 22.4%;
+    width: 22%;
   }
   .touricons-block .column.first {
     margin-left: 25px;
@@ -172,6 +172,13 @@ H3 {
             font-size: 40px;
         }
 
+    .touricons-block i.touricon.fa.fa-glass,
+    .touricons-block i.touricon.fa.fa-cutlery.touricon {
+        font-size: 50px;
+    }
+    .touricons-block i.touricon.fa.fa-glass {
+        font-size: 49px;
+    }
     .touricons-block i.touricon.touricon-big {
         font-size: 50px;
     }
@@ -918,3 +925,17 @@ select#calMonthSelect {
 }
 
 /* end tripadvisor*/
+#section_discount_home .dt-sc-one-half {
+  width: 54%;
+  padding-top: 20px;
+}
+
+#section_discount_home2 .dt-sc-one-half {
+  width: 45%;
+  padding-top: 0;
+}
+
+#section_discount_home .dt-sc-one-half img {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}

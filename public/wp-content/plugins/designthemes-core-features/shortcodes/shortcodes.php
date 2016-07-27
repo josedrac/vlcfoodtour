@@ -743,8 +743,14 @@ class DTCoreShortcodesDefination {
 		if($type == 'type6') {
 			//$out2 = '<div class="column dt-sc-one-fifth">'.$out2.'</div>';
 			//$out1 = '<div class="column dt-sc-four-fifth first">'.$out1;
-//			$out2 = '<div class="member_info"><div class="memberOverlayLink" data-anchorwidth="90"><div class="avatar"><img src="https://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9d/avatar068.jpg" class="avatar potentialFacebookAvatar" width="74" height="74"></div><div class="username mo"><span class="expand_inline scrname"> msjanechu...</span></div></div><div class="location">Sunnyvale, California</div></div>';
-			$out2 = '<div class="member_info"><div class="memberOverlayLink" data-anchorwidth="90"><div class="avatar"><img src="https://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9d/avatar068.jpg" class="avatar potentialFacebookAvatar" width="74" height="74"></div><div class="info_usuername"><span class="expand_inline scrname"> msjanechu...</span><span class="location">Sunnyvale, California</span></div></div></div>';
+		$out2 = '<div class="member_info"><div class="memberOverlayLink" data-anchorwidth="90"><div class="avatar"><img src="https://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9d/avatar068.jpg" class="avatar potentialFacebookAvatar" width="74" height="74"></div><div class="username mo"><span class="expand_inline scrname"> msjanechu...</span></div></div><div class="location">Sunnyvale, California</div></div>';
+
+/*
+			$out2 = '<div class="member_info"><div class="memberOverlayLink" data-anchorwidth="90">';
+			$out2 = $out2.'<div class="avatar"><img src="https://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9d/avatar068.jpg" class="avatar potentialFacebookAvatar" width="74" height="74"></div>';
+			$out2 = $out2.'<div class="info_usuername"><div class="scrname"> msjanechu...</div><div class="location">Sunnyvale, California</div></div>';
+			$out2 = $out2.'</div></div>';
+*/
 
 			//$out3 = '</div>';
 		}
