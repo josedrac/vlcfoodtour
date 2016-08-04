@@ -182,4 +182,10 @@
         padding-top: 2px !important;
     }
     /*  end botones redes sociales */
+    #footer .pipdig_snapcode_widget p {
+        display: none;
+    }
+    .widget.pipdig_snapcode_widget {
+        margin-bottom: 20px;
+    }
 }
