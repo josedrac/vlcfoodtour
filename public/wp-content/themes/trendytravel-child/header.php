@@ -149,4 +149,5 @@
                         </div>
                     </div>
 				</header>
-			</div><!-- header-wrapper ends here -->
+			</div>
+			<!-- header-wrapper ends here -->

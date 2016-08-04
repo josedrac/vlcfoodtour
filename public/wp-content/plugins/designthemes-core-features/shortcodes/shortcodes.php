@@ -710,12 +710,27 @@ class DTCoreShortcodesDefination {
 				'icon' =>'',
 				'target' => '',
 				'class' => '',
-				'link_user_name' => ''
+				'link_user_name' => '',
+				'url_tripadvisor' =>'',
+				'review' =>'',
+				'avatar' =>'',
+				'nick' =>'',
+				'location' =>''
 		), $attrs ) );
 
 		$attribute = !empty($icon) ? "class='dt-sc-callout-box with-icon {$type} {$class}' " :" class='dt-sc-callout-box {$type} {$class}' ";
 
 		$target = empty($target) ? 'target="_blank"' : "target='{$target}' ";
+
+		$url_tripadvisor = "{$url_tripadvisor}";
+
+		$review = "{$review}";
+
+		$avatar = "{$avatar}";
+
+		$nick = "{$nick}";
+
+		$location = "{$location}";
 
 		$content = DTCoreShortcodesDefination::dtShortcodeHelper ( $content );
 
@@ -736,23 +751,20 @@ class DTCoreShortcodesDefination {
 
 		$out2 = ( !empty($link) and $type!='type6' ) ? "<a href='{$link}' class='dt-sc-button small' {$target}>{$button_text}</a>" : "";
 
-		if($type != 'type1' and $type != 'type2' and $type != 'type4') {
+		if($type != 'type1' and $type != 'type2' and $type != 'type4' and $type != 'type6') {
 			$out2 = '<div class="column dt-sc-one-fifth">'.$out2.'</div>';
 		}
 
 		if($type == 'type6') {
-			//$out2 = '<div class="column dt-sc-one-fifth">'.$out2.'</div>';
-			//$out1 = '<div class="column dt-sc-four-fifth first">'.$out1;
-		$out2 = '<div class="member_info"><div class="memberOverlayLink" data-anchorwidth="90"><div class="avatar"><img src="https://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9d/avatar068.jpg" class="avatar potentialFacebookAvatar" width="74" height="74"></div><div class="username mo"><span class="expand_inline scrname"> msjanechu...</span></div></div><div class="location">Sunnyvale, California</div></div>';
-
-/*
-			$out2 = '<div class="member_info"><div class="memberOverlayLink" data-anchorwidth="90">';
-			$out2 = $out2.'<div class="avatar"><img src="https://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9d/avatar068.jpg" class="avatar potentialFacebookAvatar" width="74" height="74"></div>';
-			$out2 = $out2.'<div class="info_usuername"><div class="scrname"> msjanechu...</div><div class="location">Sunnyvale, California</div></div>';
-			$out2 = $out2.'</div></div>';
-*/
-
-			//$out3 = '</div>';
+			$out3 = '<h3 class="testimonialTitle"><a href="'.$url_tripadvisor.'" target="_blank"><span class="quote left">“</span>';
+			$out3 = $out3.$review.'<span class="quote right">”</span></a></h3>';
+			$out3 = $out3.'<div class="testimonialAvatar"><a href="'.$url_tripadvisor.'" target="_blank"><img id="lazyload_-10056986_46" class="avatar" src="'.$avatar.'" width="74" height="74" /></a></div>';
+			$out3 = $out3.'<div class="testimonialSign">';
+			$out3 = $out3.'<p><a href="'.$url_tripadvisor.'" target="_blank">'.$nick.'</a></p>';
+			$out3 = $out3.'<p><a href="'.$url_tripadvisor.'" target="_blank">'.$location.'</a></p>';
+			$out3 = $out3.'<p><a href="'.$url_tripadvisor.'" target="_blank"><img class="tripadvisor" src="https://www.tripadvisor.es/img/cdsi/img2/branding/150_logo-11900-2.png" alt="tripadvisor"/></a></p>';
+			$out3 = $out3.'</div>';
+			//error_log("shortcode type6");
 		}
 
 		return "<div {$attribute}>".$out1.$out2.$out3."</div>";

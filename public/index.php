@@ -15,3 +15,9 @@ define('WP_USE_THEMES', true);
 
 /** Loads the WordPress Environment and Template */
 require( dirname( __FILE__ ) . '/wp-blog-header.php' );
+/*
+include(ABSPATH."/wp-includes/ChromePhp.php");
+ChromePhp::log('Hello console!');
+ChromePhp::log($_SERVER);
+ChromePhp::warn('something went wrong!');
+*/

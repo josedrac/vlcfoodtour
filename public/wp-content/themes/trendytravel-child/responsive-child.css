@@ -21,6 +21,7 @@
 @media only screen and (min-width:1120px) and (max-width:1280px) {
 
 }
+
 /*----*****---- << Tablet (Portrait) >> ----*****----*/
 /* Note: Design for a width of 768px, Gutter: 30px, Unit: 32px */
 @media only screen and (min-width:768px) and (max-width:959px) {
@@ -36,6 +37,7 @@
         margin-bottom: 6px;
     }
 }
+
 /*----*****---- << Mobile (Landscape) >> ----*****----*/
 /* Note: Design for a width of 480px */
 @media only screen and (max-width:767px) {
@@ -71,28 +73,22 @@
     .dt-menu-toggle {
         padding: 6px 15px 0 15px;
     }
-
     .fullwidth-section.grey-bg {
         padding: 20px 0;
     }
-
     .learnmore-button {
         padding: 11px 24px 11px 24px !important;
         margin-left: 14px !important;
     }
-
     .dt-sc-button {
         margin-bottom: 15px;
     }
-
     .section-title {
         height: auto !important;
     }
-
     .dt-menu-toggle-icon {
         margin-top: 22px;
     }
-
     .blog-entry-inner, .dt-sc-one-third .blog-entry-inner {
         padding-left: 0;
     }
@@ -110,7 +106,7 @@
       display: none;
     }
     #eztixIntegratedCalendar .calMonthTable .dayNum {
-      text-align:left
+      text-align:left;
     }
     #eztixIntegratedCalendar .calMonthTable.remote td.past {
       display: none;
@@ -119,14 +115,14 @@
       text-align: center;
       width: 100%;
     }
-
-
 }
+
 /*----*****---- << Mobile >> ----*****----*/
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
 
 }
+
 /*----*****---- << Mobile >> ----*****----*/
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 319px) {
@@ -134,25 +130,43 @@
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .container {
+        width:300px;
+    }
+    #section_discount_home .dt-sc-one-half {
+      width: 99%;
+      padding-top: 20px;
+    }
+    #section_discount_home2 .dt-sc-one-half {
+      width: 99%;
+      padding-top: 0;
+    }
+    #CDSWIDSSP {
+        width: 100% !important;
+    }
+    .fullwidth-section.grey-bg .container .welcome-txt .dt-sc-button {
+        margin-bottom: 15px;
+    }
+}
+
 @media only screen and (min-width: 320px) and (max-width: 360px) {
 
-	.container { width:300px; }
 }
+
 @media only screen and (min-width: 360px) and (max-width: 479px) {
 
-	.container { width:350px; }
 }
 
+@media only screen and (max-width: 480px) {
+    /*  botones redes sociales */
+    #footer .widget ul.sfbp-list li a {
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
 
-@media only screen and (max-width: 480px)
-{
-	/*.dt-menu-toggle-icon-book-now-link {
-    font-size:20px;
-  }
-	.dt_sc_image_box-blurb {
-    font-size: 15px;
-  }
-	.styledHeaderH1,
-  .styledHeaderH2 { border-bottom: 0px double #EBBA53; }
-	#book-now-word-now {display:none}*/
+    #footer .widget ul.sfbp--theme-4 .sfbp-list li {
+        float: left;
+    }
+    /*  end botones redes sociales */
 }

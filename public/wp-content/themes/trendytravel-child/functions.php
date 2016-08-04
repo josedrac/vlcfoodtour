@@ -16,4 +16,7 @@
 //wp-content/plugins/designthemes-core-features/shortcodes/css/shortcodes.css
 //wp-content/plugins/designthemes-core-features/shortcodes/shortcodes.php
 
+///Users/josedrac/gitjosedrac/valenciafoodtourspain/public/index.php
+///Users/josedrac/gitjosedrac/valenciafoodtourspain/public/wp-includes/ChromePhp.pushpin
+
 ?>

@@ -127,19 +127,18 @@ h2.section-title, h2.section-title1 {
 
 .section-title {
     text-transform: none;
-    color:#a3865b !important;
+    color:#a3865b;
     font-family: Oswald;
     height: 30px;
     font-size: 28px;
     font-weight: 400;
+    margin: 20px 0 !important;
+    margin-bottom: 20px;
 }
-
 .section-title:before,
 .section-title1:before {
-    background: #62a5a1 !important;
+    background: #62a5a1;
 }
-
-
 ul.dt-sc-fancy-list li {
     line-height: 30px;
     padding-left: 42px;
@@ -219,6 +218,8 @@ H3 {
 
 .entry-post .entry-detail {
     min-height: 288px;
+    border: 1px solid #eeeeee;
+    color: #545454;
 }
 
 .entry-post .entry-detail p.aligncenter {
@@ -426,6 +427,7 @@ textarea {
     width: 100%;
     border-radius: 3px;
     font-size: 13px;
+    height: 44px;
 }
 /* end form*/
 
@@ -526,9 +528,15 @@ input[type="submit"], button:hover, input[type="button"]:hover, .subscribe-frm i
 #footer .widget.widget_sfbp_widget {
     padding-bottom: 5px !important;
 }
-#footer .widget .sfbp-list ul li a {
+#footer .widget ul.sfbp-list li a {
     color: white !important;
 }
+.sfbp-set--one .sfbp-btn:before {
+    width: 48px !important;
+    height: 48px !important;
+    padding-top: 2px !important;
+}
+
 /*  end botones redes sociales */
 
 /* instagram feed */
@@ -925,9 +933,10 @@ select#calMonthSelect {
 }
 
 /* end tripadvisor*/
+/*sections discount */
 #section_discount_home .dt-sc-one-half {
   width: 54%;
-  padding-top: 20px;
+  padding-top: 0;
 }
 
 #section_discount_home2 .dt-sc-one-half {
@@ -939,3 +948,65 @@ select#calMonthSelect {
   margin-right: 10px;
   margin-bottom: 5px;
 }
+/* end sections discount */
+/*sections home */
+#section_home .dt-sc-one-half {
+  width: 52%;
+  margin-right: 10px;
+  padding-top: 0;
+}
+
+#section_home2 .dt-sc-one-half {
+  width: 47%;
+  padding-top: 0;
+}
+
+#section_home .dt-sc-one-half img {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+#section_home2 .dt-sc-one-half img {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+/*end sections home */
+
+select {
+    height: 54px;
+}
+select option {
+    background-color: #a3865b;
+}
+/* testimonial Title */
+h3.testimonialTitle{
+    text-align: left;
+}
+h3.testimonialTitle a,
+h3.testimonialTitle a:hover {
+    color: #545454 !important;
+    text-align: left;
+}
+.testimonialAvatar {
+    float:left;
+    margin-right: 15px;
+}
+.testimonialAvatar img {
+    border-radius: 100%;
+}
+.testimonialSign {
+    font-size: 13px;
+    text-align: left;
+}
+.testimonialSign p{
+    font-size: 13px;
+    line-height: 19px;
+}
+.testimonialSign .tripadvisor{
+    width:100px;
+}
+.testimonialSign a,
+.testimonialSign a:hover {
+    color: #2c3e50;
+}
+/* end of testimonialTitle */

@@ -224,13 +224,6 @@
 	.dt-sc-ico-content.type5:hover .icon { color:#fff; }
 	.dt-sc-ico-content.type5:hover .icon:after { -webkit-transform: scale(1.3); -moz-transform: scale(1.3); -ms-transform: scale(1.3); transform: scale(1.3); opacity: 0; }
 
-	.dt-sc-ico-content.type6 { background:#f6f6f6; padding:0px 5% 20px; width:90%; text-align:center; }
-	.dt-sc-ico-content.type6 .icon { background:#ffffff; display:inline-block; width:90px; height:90px; text-align:center; margin:-45px 0px 20px; border-radius:90px; }
-	.dt-sc-ico-content.type6 .icon span { font-size:36px; line-height:90px; }
-	.dt-sc-ico-content.type6 h4 { margin-bottom:15px; font-size:18px; }
-
-	.dt-sc-ico-content.type6:hover .icon { -moz-transform: scale(1.2) rotate(0deg) translate(0px); -webkit-transform: scale(1.2) rotate(0deg) translate(0px); -o-transform: scale(1.2) rotate(0deg) translate(0px); transform: scale(1.2) rotate(0deg) translate(0px); }
-
 	.dt-sc-ico-content.type7 { padding:0px 0px 0px 70px; position:relative; width:auto; }
 	.dt-sc-ico-content.type7 .icon { width:50px; height:50px; text-align:center; position:absolute; left:0; top:0px; border-radius:50%; border:1px solid; }
 	.dt-sc-ico-content.type7 .icon span { font-size:16px; line-height:50px; color:#2c3e50; }
@@ -983,7 +976,7 @@
 
 	.dt-sc-callout-box.type1 { border:1px solid #dfdfdf; text-align:center; }
 	.dt-sc-callout-box.with-icon.type1 .icon, .dt-sc-callout-box.with-icon.type2 .icon, .dt-sc-callout-box.with-icon.type4 .icon { margin-right:0; }
-	.dt-sc-callout-box.type1, .dt-sc-callout-box.type2, .dt-sc-callout-box.type4, .dt-sc-callout-box.type6 { text-align:center; }
+	.dt-sc-callout-box.type1, .dt-sc-callout-box.type2, .dt-sc-callout-box.type4 { text-align:center; }
 	.dt-sc-callout-box.type2, .dt-sc-callout-box.type5 { background:#f6f6f6; }
 	.dt-sc-callout-box.type3 { background:#f6f6f6; border-left:5px solid; }
 	.dt-sc-callout-box.with-icon.type3 .icon, .dt-sc-callout-box.with-icon.type5 .icon { float:left; }
@@ -1006,28 +999,7 @@
 	.dt-sc-callout-box.type4:hover .icon { background:none; color:#ffffff; }
 
 
-.dt-sc-callout-box.type6 div.avatar img.avatar {
-    border-radius: 100%;
-}
-.dt-sc-callout-box.type6 .username.mo {
-    height: 100%;
-    overflow: hidden;
-}
-.dt-sc-callout-box.type6 .member_info {
-    padding-top: 15px;
-}
-.dt-sc-callout-box.type6 .username {
-    clear: both;
-}
-.dt-sc-callout-box.type6 .inlineReviewUpdate .username.mo .scrname {
-    display: block;
-    width: 112px;
-    font-size: 1em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -moz-text-overflow: ellipsis;
-}
+
 
 
 
