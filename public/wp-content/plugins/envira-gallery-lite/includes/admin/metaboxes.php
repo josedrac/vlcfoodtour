@@ -2018,10 +2018,13 @@ class Envira_Gallery_Metaboxes {
         $item['alt'] = str_replace( "&quot;", '\"', $item['alt'] );
         $item['_thumbnail'] = $thumbnail[0]; // Never saved against the gallery item, just used for the thumbnail output in the Edit Gallery screen.
 
+        // JSON encode based on PHP version.
+        $json = version_compare( PHP_VERSION, '5.3.0' ) >= 0 ? json_encode( $item, JSON_HEX_APOS ) : json_encode( $item );
+
         // Buffer the output
         ob_start();
         ?>
-        <li id="<?php echo $id; ?>" class="envira-gallery-image envira-gallery-status-<?php echo $item['status']; ?>" data-envira-gallery-image="<?php echo $id; ?>" data-envira-gallery-image-model='<?php echo json_encode( $item, JSON_HEX_APOS ); ?>'>
+        <li id="<?php echo $id; ?>" class="envira-gallery-image envira-gallery-status-<?php echo $item['status']; ?>" data-envira-gallery-image="<?php echo $id; ?>" data-envira-gallery-image-model='<?php echo htmlspecialchars( $json, ENT_QUOTES, 'UTF-8' ); ?>'>
             <img src="<?php echo esc_url( $item['_thumbnail'] ); ?>" alt="<?php esc_attr_e( $item['alt'] ); ?>" />
             <div class="meta">
                 <div class="title">
@@ -2094,9 +2097,9 @@ class Envira_Gallery_Metaboxes {
         // Loop through the images and crop them.
         if ( $images ) {
             // Increase the time limit to account for large image sets and suspend cache invalidations.
-            if ( ! ini_get( 'safe_mode' ) ) {
+            // if ( ! ini_get( 'safe_mode' ) ) {
                 set_time_limit( Envira_Gallery_Common::get_instance()->get_max_execution_time() );
-            }
+            // }
             wp_suspend_cache_invalidation( true );
 
             foreach ( $images as $id => $item ) {
@@ -2159,9 +2162,9 @@ class Envira_Gallery_Metaboxes {
         // Loop through the images and crop them.
         if ( $images ) {
             // Increase the time limit to account for large image sets and suspend cache invalidations.
-            if ( ! ini_get( 'safe_mode' ) ) {
+            // if ( ! ini_get( 'safe_mode' ) ) {
                 set_time_limit( Envira_Gallery_Common::get_instance()->get_max_execution_time() );
-            }
+            // }
             wp_suspend_cache_invalidation( true );
 
             foreach ( $images as $id => $item ) {

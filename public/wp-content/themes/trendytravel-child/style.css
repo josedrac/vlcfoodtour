@@ -528,15 +528,30 @@ input[type="submit"], button:hover, input[type="button"]:hover, .subscribe-frm i
 #footer .widget.widget_sfbp_widget {
     padding-bottom: 5px !important;
 }
-#footer .widget ul.sfbp-list li a {
+ul.sfbp-list li a {
     color: white !important;
 }
-.sfbp-set--one .sfbp-btn:before {
+/*ul.sfbp-list li {
+    float: left !important;
+    width: 100%;
+    margin-bottom: 10px;
+}
+ul.sfbp-list li .sfbp-text {
+    display: inline-block !important;
+    position: relative;
+    top: -5px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+ul.sfbp-list li a.sfbp-btn {
+    width: 48px !important;
+    height: 48px !important;
+}
+ul.sfbp-list li a.sfbp-btn:before {
     width: 48px !important;
     height: 48px !important;
     padding-top: 2px !important;
-}
-
+}*/
 /*  end botones redes sociales */
 
 /* instagram feed */
@@ -601,43 +616,33 @@ input[type="submit"], button:hover, input[type="button"]:hover, .subscribe-frm i
 #cookie-law-info-bar span {
     font-family: "Open Sans", sans-serif !important;
 }
-
-
-
 /* end plugin cookie */
-
 
 /* calendar */
 #eztixIntegratedCalendar{
-font-family: Century Gothic,Arial,Helvetica,sans-serif;
-font-size: 1em;
-color: #555;
-border: 1px solid #ccc;
-padding: 2px;
-background-color: #f0f0f0;
+    font-family: Century Gothic,Arial,Helvetica,sans-serif;
+    font-size: 1em;
+    color: #555;
+    border: 1px solid #ccc;
+    padding: 2px;
+    background-color: #f0f0f0;
 }
-
 #eztixIntegratedCalendar #calNav{
-text-align: center;
+    text-align: center;
 }
-
 #eztixIntegratedCalendar #calNav select{
-width: inherit !important;
+    width: inherit !important;
 }
-
 #eztixIntegratedCalendar #calNav select#calLangSelect{
-float: left;
+    float: left;
 }
-
 #eztixIntegratedCalendar #calNav select#calMonthSelect{
-float: right;
+    float: right;
 }
-
 #eztixIntegratedCalendar #calNav h3{
-font-size: 1.1em;
-margin: 6px;
+    font-size: 1.1em;
+    margin: 6px;
 }
-
 #eztixIntegratedCalendar .calMonthTable{
 width: 100%;
 border-collapse: separate;
@@ -914,9 +919,7 @@ select#calMonthSelect {
 }
 
 #dropDownToursMenu .close, #dropDownToursMenu .close i{color:white;  margin: 0px;}
-
 /* end calendar */
-
 
 /*tripadvisor*/
 #CDSWIDSSP {

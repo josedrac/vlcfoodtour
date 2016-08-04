@@ -1,3 +1,4 @@
+<?php if ( ! defined( 'ABSPATH' ) ) exit; ?>
 <div class="wrap duplicate_page_settings">
 <h1><?php _e('Duplicate Page Settings', 'duplicate_page')?></h1>
 <?php $duplicatepageoptions = array();
@@ -15,11 +16,11 @@ if(isset($_POST['submit_duplicate_page']) && wp_verify_nonce( $_POST['duplicatep
 		 $saveSettings = update_option('duplicate_page_options', $duplicatepageoptions );
 		if($saveSettings)
 		{
-			dp_redirect('options-general.php?page=duplicate_page_settings&msg=1');
+			duplicate_page::dp_redirect('options-general.php?page=duplicate_page_settings&msg=1');
 		}
 		else
 		{
-			dp_redirect('options-general.php?page=duplicate_page_settings&msg=2');
+			duplicate_page::dp_redirect('options-general.php?page=duplicate_page_settings&msg=2');
 		}
 endif;
 if(!empty($msg) && $msg == 1):
@@ -52,10 +53,10 @@ $duplicate_post_status = array('draft','publish','private','pending');
 <tr>
 <th scope="row"><label for="duplicate_post_redirect"><?php _e('Redirect to after click on <strong>Duplicate This Link</strong>', 'duplicate_page')?></label></th>
 <td><select id="duplicate_post_redirect" name="duplicate_post_redirect">
-	<option value="to_list" <?php echo($opt['duplicate_post_redirect'] == 'to_list' ) ? "selected = 'selected'" : ""; ?>><?php _e('To current list', 'duplicate_page')?></option>
-	<option value="to_page" <?php echo($opt['duplicate_post_redirect'] == 'to_page' ) ? "selected = 'selected'" : ""; ?>><?php _e('To duplicate edit page directly', 'duplicate_page')?></option>
+	<option value="to_list" <?php echo($opt['duplicate_post_redirect'] == 'to_list' ) ? "selected = 'selected'" : ""; ?>><?php _e('To All Posts List', 'duplicate_page')?></option>
+	<option value="to_page" <?php echo($opt['duplicate_post_redirect'] == 'to_page' ) ? "selected = 'selected'" : ""; ?>><?php _e('To Duplicate Edit Screen', 'duplicate_page')?></option>
     </select>
-    <p><?php _e('Please select any post redirection, redirect you to selected after click on duplicate this link. <strong>Default:</strong> To current list.', 'duplicate_page')?></p>
+    <p><?php _e('Please select any post redirection, redirect you to selected after click on duplicate this link. <strong>Default:</strong> To All Posts List.', 'duplicate_page')?></p>
 </td>
 </tr>
 </tbody></table>

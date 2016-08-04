@@ -2289,9 +2289,9 @@ ul.cstmskin_iconlist {
  	border: none;
 }
 .sfsi_Sicons .sf_pinit > span {
-	height: 23px !important;
+	height: 20px !important;
 }
 .sfsi_Sicons .sf_pinit > span > span {
-	width: 49px !important;
-	right: -49px !important;
+	width: 38px !important;
+	right: -45px !important;
 }

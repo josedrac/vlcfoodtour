@@ -423,42 +423,42 @@ class Envira_Gallery_Common {
                 'value' => 'Swing',
                 'name'  => __( 'Swing', 'envira-gallery' )
             ),
-            array(
-                'value' => 'Quad',
-                'name'  => __( 'Quad', 'envira-gallery' )
-            ),
-            array(
-                'value' => 'Cubic',
-                'name'  => __( 'Cubic', 'envira-gallery' )
-            ),
-            array(
-                'value' => 'Quart',
-                'name'  => __( 'Quart', 'envira-gallery' )
-            ),
-            array(
-                'value' => 'Quint',
-                'name'  => __( 'Quint', 'envira-gallery' )
-            ),
-            array(
-                'value' => 'Sine',
-                'name'  => __( 'Sine', 'envira-gallery' )
-            ),
-            array(
-                'value' => 'Expo',
-                'name'  => __( 'Expo', 'envira-gallery' )
-            ),
-            array(
-                'value' => 'Circ',
-                'name'  => __( 'Circ', 'envira-gallery' )
-            ),
-            array(
-                'value' => 'Back',
-                'name'  => __( 'Back', 'envira-gallery' )
-            ),
-            array(
-                'value' => 'Bounce',
-                'name'  => __( 'Bounce', 'envira-gallery' )
-            ),
+            // array(
+            //     'value' => 'Quad',
+            //     'name'  => __( 'Quad', 'envira-gallery' )
+            // ),
+            // array(
+            //     'value' => 'Cubic',
+            //     'name'  => __( 'Cubic', 'envira-gallery' )
+            // ),
+            // array(
+            //     'value' => 'Quart',
+            //     'name'  => __( 'Quart', 'envira-gallery' )
+            // ),
+            // array(
+            //     'value' => 'Quint',
+            //     'name'  => __( 'Quint', 'envira-gallery' )
+            // ),
+            // array(
+            //     'value' => 'Sine',
+            //     'name'  => __( 'Sine', 'envira-gallery' )
+            // ),
+            // array(
+            //     'value' => 'Expo',
+            //     'name'  => __( 'Expo', 'envira-gallery' )
+            // ),
+            // array(
+            //     'value' => 'Circ',
+            //     'name'  => __( 'Circ', 'envira-gallery' )
+            // ),
+            // array(
+            //     'value' => 'Back',
+            //     'name'  => __( 'Back', 'envira-gallery' )
+            // ),
+            // array(
+            //     'value' => 'Bounce',
+            //     'name'  => __( 'Bounce', 'envira-gallery' )
+            // ),
         );
 
         return apply_filters( 'envira_gallery_easing_transition_effects', $effects );

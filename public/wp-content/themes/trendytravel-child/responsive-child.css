@@ -160,13 +160,26 @@
 
 @media only screen and (max-width: 480px) {
     /*  botones redes sociales */
-    #footer .widget ul.sfbp-list li a {
-        margin-right: 25px;
+    ul.sfbp-list li {
+        float: left !important;
+        width: 100%;
         margin-bottom: 25px;
     }
-
-    #footer .widget ul.sfbp--theme-4 .sfbp-list li {
-        float: left;
+    ul.sfbp-list li .sfbp-text {
+        display: inline-block !important;
+        position: relative;
+        top: -5px;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    ul.sfbp-list li a.sfbp-btn {
+        width: 48px !important;
+        height: 48px !important;
+    }
+    ul.sfbp-list li a.sfbp-btn:before {
+        width: 48px !important;
+        height: 48px !important;
+        padding-top: 2px !important;
     }
     /*  end botones redes sociales */
 }

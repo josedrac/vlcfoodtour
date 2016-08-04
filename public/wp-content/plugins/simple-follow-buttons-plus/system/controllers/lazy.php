@@ -305,6 +305,7 @@ class sfbpFollowButtons
     {
         // declare variable
         $facebook_follow_count = '';
+        $facebook_button2 = '';
 
         // if follow counts are enabled
         if ($this->sfbp_settings['counters_enabled'] == 'Y') {
@@ -319,13 +320,13 @@ class sfbpFollowButtons
 
         // not using custom images
         if ($this->sfbp_settings['custom_images'] != 'Y') {
-            $facebook_button = '<span class="sfbp-text">Facebook</span>';
+            $facebook_button2 = '<span class="sfbp-text">deliciousvalencia</span>';
         } else {// using custom images
             $facebook_button = '<img src="' . $this->sfbp_settings['custom_facebook'] . '" title="Follow on Facebook" class="sfbp" alt="Follow on Facebook" />';
         }
 
         // put button together
-        $facebook_buttons = $facebook_link.$facebook_button.'</a>'.$facebook_follow_count;
+        $facebook_buttons = $facebook_link.$facebook_button.'</a>'.$facebook_button2.$facebook_follow_count;
 
         // add facebook buttons
         $this->htmlFollowButtons .= $facebook_buttons;
@@ -487,6 +488,7 @@ class sfbpFollowButtons
     {
         // declare variable
         $follow_count = '';
+        $button2 = '';
 
         // if follow counts are enabled
         if ($this->sfbp_settings['counters_enabled'] == 'Y') {
@@ -501,13 +503,13 @@ class sfbpFollowButtons
 
         // not using custom images
         if ($this->sfbp_settings['custom_images'] != 'Y') {
-            $button = '<span class="sfbp-text">Instagram</span>';
+            $button2 = '<span class="sfbp-text">deliciousvlc</span>';
         } else {// using custom images
             $button = '<img src="' . $this->sfbp_settings['custom_instagram'] . '" title="Follow on Instagram" class="sfbp" alt="Follow on Instagram" />';
         }
 
         // put button together
-        $button = $link.$button.'</a>'.$follow_count;
+        $button = $link.$button.'</a>'.$button2.$follow_count;
 
         // add button
         $this->htmlFollowButtons .= $button;
@@ -568,18 +570,19 @@ class sfbpFollowButtons
     // get pinterest button
     public function sfbp_pinterest()
     {
+        $this->htmlFollowButtons2 = '';
         // pinterest follow link
         $this->htmlFollowButtons .= '<a href="'.$this->buttons['pinterest']['url_prefix'].$this->sfbp_settings['url_pinterest'].'" class="sfbp-btn sfbp-pinterest" ' . ($this->sfbp_settings['rel_nofollow'] == 'Y' ? 'rel="nofollow"' : null).'>';
 
         // not using custom images
         if ($this->sfbp_settings['custom_images'] != 'Y') {
-            $this->htmlFollowButtons .= '<span class="sfbp-text">Pinterest</span>';
+            $this->htmlFollowButtons2 = '<span class="sfbp-text">deliciousvlc</span>';
         } else {// using custom images
             $this->htmlFollowButtons .= '<img src="' . $this->sfbp_settings['custom_pinterest'] . '" title="Follow on Pinterest" class="sfbp" alt="Follow on Pinterest" />';
         }
 
         // close link
-        $this->htmlFollowButtons .= '</a>';
+        $this->htmlFollowButtons .= '</a>'.$this->htmlFollowButtons2;
 
         // if follow counts are enabled
         if ($this->sfbp_settings['counters_enabled'] == 'Y') {
@@ -751,6 +754,7 @@ class sfbpFollowButtons
     public function sfbp_twitter()
     {
         $twitter_follow_count = '';
+        $twitterButton2 = '';
 
         // if follow counts are enabled
         if ($this->sfbp_settings['counters_enabled'] == 'Y') {
@@ -764,13 +768,13 @@ class sfbpFollowButtons
 
         // not using custom images
         if ($this->sfbp_settings['custom_images'] != 'Y') {
-            $twitterButton = '<span class="sfbp-text">Twitter</span>';
+            $twitterButton2 = '<span class="sfbp-text">@vlcfoodtour</span>';
         } else {// using custom images
             $twitterButton = '<img src="' . $this->sfbp_settings['custom_twitter'] . '" title="Tweet about this" class="sfbp" alt="Tweet about this" />';
         }
 
         // put button together
-        $twitterButtons = $twitterLink.$twitterButton.'</a>'.$twitter_follow_count;
+        $twitterButtons = $twitterLink.$twitterButton.'</a>'.$twitterButton2.$twitter_follow_count;
 
         // add one/two twitter follow buttons
         $this->htmlFollowButtons .= $twitterButtons;
@@ -805,16 +809,16 @@ class sfbpFollowButtons
     {
         // vk follow link
         $this->htmlFollowButtons .= '<a href="'.$this->buttons['vk']['url_prefix'].$this->sfbp_settings['url_vk'].'" class="sfbp-btn sfbp-vk" ' . ($this->sfbp_settings['rel_nofollow'] == 'Y' ? 'rel="nofollow"' : null).'>';
-
+        $this->htmlFollowButtons2 = '';
         // not using custom images
         if ($this->sfbp_settings['custom_images'] != 'Y') {
-            $this->htmlFollowButtons .= '<span class="sfbp-text">VK</span>';
+            $this->htmlFollowButtons2 = '<span class="sfbp-text">vlcfoodtour</span>';
         } else {// using custom images
             $this->htmlFollowButtons .= '<img src="' . $this->sfbp_settings['custom_vk'] . '" title="Follow this on VK" class="sfbp" alt="Follow this on VK" />';
         }
 
         // close link
-        $this->htmlFollowButtons .= '</a>';
+        $this->htmlFollowButtons .= '</a>'.$this->htmlFollowButtons2;
 
         // if follow counts are enabled
         if ($this->sfbp_settings['counters_enabled'] == 'Y') {

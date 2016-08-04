@@ -3,8 +3,8 @@
 Contributors: yithemes
 Tags: zoom, magnifier, woocommerce, product image, themes, yit, e-commerce, shop, thumbnail, thumbnail slider, zoom image, carousel, image carousel
 Requires at least: 3.5.1
-Tested up to: 4.5
-Stable tag: 1.2.19
+Tested up to: 4.5.2
+Stable tag: 1.2.20
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,11 @@ The size of the Zoom Image is automatically setted. If you want to change these 
 6. Choose how many items the slider should show, the image thumbnails will fit the available width.
 
 == Changelog ==
+
+= Version 1.2.20 - Released: Jun 13, 2016 =
+
+* Added: spanish localization
+* Updated: WooCommerce 2.6 100% compatible
 
 = Version 1.2.19 - Released: May 04, 2016 =
 
@@ -235,7 +240,8 @@ If you have suggestions about how to improve YITH WooCommerce Zoom Magnifier, yo
 
 = Available Languages =
 * English (Default)
-* Italiano
+* Italian
+* Spanish
 
 If you have created your own language pack, or have an update for an existing one, you can send [gettext PO and MO file](http://codex.wordpress.org/Translating_WordPress "Translating WordPress")
 [use](http://yithemes.com/contact/ "Your Inspiration Themes") so we can bundle it into YITH WooCommerce Zoom Magnfier Languages.

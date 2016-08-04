@@ -1542,6 +1542,50 @@ ul.sfsi_floaticon_margin_sec li ins {
 {
 	background-size: 51px 51px !important;
 }
+
+.sfsi_feedClaimingOverlay h1 {
+    font-size: 22px !important;
+    font-weight: bolder !important;
+    margin-top: 7px !important;
+}
+.sfsi_feedClaimingOverlay input[type="email"] {
+    font-size: 16px;
+    margin: 26px 0 0;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+	color: #bebebe !important;
+	box-shadow: none;
+}
+.sfsi_feedClaimingOverlay input[type="email"]::-webkit-input-placeholder {
+   color: #bebebe !important;
+}
+.sfsi_feedClaimingOverlay input[type="email"]:-moz-placeholder { /* Firefox 18- */
+	color: #bebebe !important;
+}
+.sfsi_feedClaimingOverlay input[type="email"]::-moz-placeholder {  /* Firefox 19+ */
+	color: #bebebe !important;
+}
+.sfsi_feedClaimingOverlay input[type="email"]:-ms-input-placeholder {  
+	color: #bebebe !important;
+}
+.sfsi_feedClaimingOverlay .save_button {
+    padding: 0 !important;
+    width: 100%;
+}
+.sfsi_feedClaimingOverlay .save_button a#getMeFullAccess{
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.sfsi_feedClaimingOverlay .sfsicloseBtn {
+    right: 8px !important;
+    top: 8px !important;
+}
+.sfsi_feedClaimingOverlay p {text-align:center !important; font-size: 12px !important;line-height: 23px !important;padding: 18px 0 0 !important; color:#bebebe !important; }
+.sfsi_feedClaimingOverlay p a {display: inline-block;font-size: 12px;margin: 0;padding: 0;width: auto; color:#274da3 !important; }
+.sfsi_feedClaimingOverlay .pop_up_box{padding: 25px 30px !important; width: 435px !important;}
+
 @media (max-width:1160px) {
 .sfsi_subscription_html xmp {
     display: block;

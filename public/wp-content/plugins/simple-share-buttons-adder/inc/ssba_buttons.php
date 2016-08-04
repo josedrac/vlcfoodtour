@@ -256,9 +256,14 @@ function get_share_buttons($arrSettings, $urlCurrentPage, $strPageTitle, $intPos
 
 // get facebook button
 function ssba_facebook($arrSettings, $urlCurrentPage, $strPageTitle, $booShowShareCount) {
-
-    // facebook share link
-    $htmlShareButtons = '<a data-site="" class="ssba_facebook_share" href="http://www.facebook.com/sharer.php?u=' . $urlCurrentPage  . '" ' . ($arrSettings['ssba_share_new_window'] == 'Y' ? ' target="_blank" ' : NULL) . ($arrSettings['ssba_rel_nofollow'] == 'Y' ? ' rel="nofollow"' : NULL) .'>';
+    // if the sharethis terms have been accepted
+    if ($arrSettings['accepted_sharethis_terms'] == 'Y' && $arrSettings['facebook_app_id'] != '') {
+        // facebook share link
+        $htmlShareButtons = '<a data-site="" data-facebook="mobile" class="ssba_facebook_share" data-href="'.$urlCurrentPage.'" href="https://www.facebook.com/dialog/share?app_id='.$arrSettings['facebook_app_id'].'&display=popup&href='.$urlCurrentPage.'&redirect_uri='.$urlCurrentPage.'" ' . ($arrSettings['ssba_share_new_window'] == 'Y' ? ' target="_blank" ' : NULL) . ($arrSettings['ssba_rel_nofollow'] == 'Y' ? ' rel="nofollow"' : NULL) .'>';
+    } else {
+        // facebook share link
+        $htmlShareButtons = '<a data-site="" class="ssba_facebook_share" href="http://www.facebook.com/sharer.php?u=' . $urlCurrentPage  . '" ' . ($arrSettings['ssba_share_new_window'] == 'Y' ? ' target="_blank" ' : NULL) . ($arrSettings['ssba_rel_nofollow'] == 'Y' ? ' rel="nofollow"' : NULL) .'>';
+    }
 
     // if not using custom
     if ($arrSettings['ssba_image_set'] != 'custom') {
@@ -285,6 +290,15 @@ function ssba_facebook($arrSettings, $urlCurrentPage, $strPageTitle, $booShowSha
 
     // return share buttons
     return $htmlShareButtons;
+}
+
+// get facebook button
+function ssba_facebook_save($arrSettings, $urlCurrentPage, $strPageTitle, $booShowShareCount) {
+    // if the sharethis terms have been accepted
+    if ($arrSettings['accepted_sharethis_terms'] == 'Y') {
+        // add facebook save button
+        return '<div class="fb-save" style="display:inline-block" data-uri="'.$urlCurrentPage.'"></div>';
+    }
 }
 
 // get facebook share count

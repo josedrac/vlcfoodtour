@@ -6,11 +6,22 @@ add_action( 'wp_enqueue_scripts', 'ssba_page_scripts' );
 
 // add css scripts for page/post use
 function ssba_page_scripts() {
+    // get settings
+	$arrSettings = get_ssba_settings();
+
+	// if the sharethis terms have been accepted
+	if ($arrSettings['accepted_sharethis_terms'] == 'Y') {
+		if (is_ssl()) {
+			// include https sharethis tracking js
+			wp_enqueue_script('ssba-sharethis', 'https://ws.sharethis.com/button/st_insights.js', null, null, true);
+		} else {
+            // include http sharethis tracking js
+            wp_enqueue_script('ssba-sharethis', 'http://w.sharethis.com/button/st_insights.js', null, null, true);
+		}
+	}
+
     // ssba.min.js
     wp_enqueue_script('ssba', plugins_url('js/ssba.min.js', SSBA_FILE), array('jquery'), false, true);
-
-	// get settings
-	$arrSettings = get_ssba_settings();
 
 	// if indie flower font is selected
 	if ($arrSettings['ssba_font_family'] == 'Indie Flower') {
@@ -33,7 +44,47 @@ function get_ssba_style() {
 	// query the db for current ssba settings
 	$arrSettings = get_ssba_settings();
 
-	// css style
+    // if the sharethis terms have been accepted
+    if ($arrSettings['accepted_sharethis_terms'] == 'Y') {
+        // if a facebook app id has been set
+        if ($arrSettings['facebook_app_id'] != '') {
+            $src = '//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appID='.$arrSettings['facebook_app_id'];
+        } else {
+            $src = '//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6';
+        }
+
+        // if an app id has been entered
+        if ($arrSettings['facebook_app_id'] != '') {
+            // init facebook
+            echo "<script>window.fbAsyncInit = function() {
+                FB.init({
+                  appId      : '" . $arrSettings['facebook_app_id'] . "',
+                  xfbml      : true,
+                  version    : 'v2.6'
+                });
+              };</script>";
+        }
+
+        // include facebook js sdk
+        echo "<script>(function(d, s, id){
+                 var js, fjs = d.getElementsByTagName(s)[0];
+                 if (d.getElementById(id)) {return;}
+                 js = d.createElement(s); js.id = id;
+                 js.src = \"" . $src . "\";
+                 fjs.parentNode.insertBefore(js, fjs);
+               }(document, 'script', 'facebook-jssdk'));</script>";
+
+		// if an app id has been entered
+		if ($arrSettings['facebook_app_id'] != '') {
+			// if facebook insights have been enabled
+			if ($arrSettings['facebook_insights'] == 'Y') {
+				// add facebook meta tag
+				echo '<meta property="fb:app_id" content="'.$arrSettings['facebook_app_id'].'" />';
+			}
+		}
+    }
+
+    // css style
 	$htmlSSBAStyle = '<style type="text/css">';
 
 	// check if custom styles haven't been set
@@ -64,7 +115,8 @@ function get_ssba_style() {
 									' . ($arrSettings['ssba_font_size']		!= ''	? 'font-size: 	' . $arrSettings['ssba_font_size'] . 'px;' : NULL) . '
 									' . ($arrSettings['ssba_font_color'] 	!= ''	? 'color: 		' . $arrSettings['ssba_font_color'] . '!important;' : NULL) . '
 									' . ($arrSettings['ssba_font_weight'] 	!= ''	? 'font-weight: ' . $arrSettings['ssba_font_weight'] . ';' : NULL) . '
-								}';
+								}
+								.fb_iframe_widget span { width: 146px !important; }';
 
         // if counters option is set to Y
 		if ($arrSettings['ssba_show_share_count'] == 'Y') {

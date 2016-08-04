@@ -186,7 +186,7 @@
 
         elements: {
             zoom: $('.yith_magnifier_zoom'),
-            zoomImage: $('.yith_magnifier_zoom img'),
+            zoomImage: $('.yith_magnifier_zoom img').first(),
             gallery: $('.yith_magnifier_gallery li a')
         }
     };

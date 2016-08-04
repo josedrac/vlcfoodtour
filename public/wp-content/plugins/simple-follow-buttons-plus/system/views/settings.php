@@ -199,7 +199,9 @@ function getSelectedsfbp($strSelectedsfbp)
             // for each included button
             foreach ($arrSelectedsfbp as $strSelected) {
                 // add a list item for each selected option
-                $htmlSelectedList .= '<li class="sfbp-option-item" id="' . $strSelected . '"><a href="javascript:;" title="'.$arrButtons[$strSelected]['full_name'].'" class="sfbp-btn sfbp-' . $strSelected . '"><span class="sfbp-text">' . $arrButtons[$strSelected]['full_name'] . '</span></a></li>';
+                //$htmlSelectedList .= '<li class="sfbp-option-item" id="' . $strSelected . '"><a href="javascript:;" title="'.$arrButtons[$strSelected]['full_name'].'" class="sfbp-btn sfbp-' . $strSelected . '"><span class="sfbp-text">' . $arrButtons[$strSelected]['full_name'] . '</span></a></li>';
+                $htmlSelectedList .= '<li class="sfbp-option-item" id="' . $strSelected . '"><a href="javascript:;" title="'.$arrButtons[$strSelected]['full_name'].'" class="sfbp-btn sfbp-' . $strSelected . '"></a><span class="sfbp-text">' . $arrButtons[$strSelected]['full_name'] . '</span></li>';
+
             }
         }
     }
@@ -231,7 +233,7 @@ function getAvailablesfbp($strSelectedsfbp)
         // for each included button
         foreach ($arrAvailablesfbp as $strAvailable) {
             // add a list item for each available option
-            $htmlAvailableList .= '<li class="sfbp-option-item" id="' . $strAvailable . '"><a href="javascript:;" title="'.$arrButtons[$strAvailable]['full_name'].'" class="sfbp-btn sfbp-' . $strAvailable . '"><span class="sfbp-text">' . $arrButtons[$strAvailable]['full_name'] . '</span></a></li>';
+            $htmlAvailableList .= '<li class="sfbp-option-item" id="' . $strAvailable . '"><a href="javascript:;" title="'.$arrButtons[$strAvailable]['full_name'].'" class="sfbp-btn sfbp-' . $strAvailable . '"></a><span class="sfbp-text">' . $arrButtons[$strAvailable]['full_name'] . '</span></li>';
         }
     }
 

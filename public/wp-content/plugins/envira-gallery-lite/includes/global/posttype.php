@@ -80,7 +80,7 @@ class Envira_Gallery_Posttype {
 
         // Define custom capaibilities if we're running Envira Gallery.
         if ( class_exists( 'Envira_Gallery' ) ) {
-            $args['capaibilities'] = array(
+            $args['capabilities'] = array(
                 // Meta caps
                 'edit_post'             => 'edit_envira_gallery',
                 'read_post'             => 'read_envira_gallery',

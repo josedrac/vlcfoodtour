@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the Envira Gallery Lite package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Envira Gallery Lite 1.5.0.3\n"
+"Project-Id-Version: Envira Gallery Lite 1.5.0.7\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/envira-gallery\n"
-"POT-Creation-Date: 2016-05-31 17:37:44+00:00\n"
+"POT-Creation-Date: 2016-07-29 17:13:57+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1025,11 +1025,11 @@ msgstr ""
 msgid "By upgrading to Envira Pro, you can split your Gallery across multiple pages with pagination, load paginated images via AJAX, lazy loading and more!"
 msgstr ""
 
-#: includes/admin/metaboxes.php:2048
+#: includes/admin/metaboxes.php:2051
 msgid "Remove Image from Gallery?"
 msgstr ""
 
-#: includes/admin/metaboxes.php:2049
+#: includes/admin/metaboxes.php:2052
 msgid "Modify Image"
 msgstr ""
 
@@ -1374,42 +1374,6 @@ msgstr ""
 msgid "Swing"
 msgstr ""
 
-#: includes/global/common.php:428
-msgid "Quad"
-msgstr ""
-
-#: includes/global/common.php:432
-msgid "Cubic"
-msgstr ""
-
-#: includes/global/common.php:436
-msgid "Quart"
-msgstr ""
-
-#: includes/global/common.php:440
-msgid "Quint"
-msgstr ""
-
-#: includes/global/common.php:444
-msgid "Sine"
-msgstr ""
-
-#: includes/global/common.php:448
-msgid "Expo"
-msgstr ""
-
-#: includes/global/common.php:452
-msgid "Circ"
-msgstr ""
-
-#: includes/global/common.php:456
-msgid "Back"
-msgstr ""
-
-#: includes/global/common.php:460
-msgid "Bounce"
-msgstr ""
-
 #: includes/global/common.php:480 includes/global/common.php:504
 msgid "Top"
 msgstr ""
@@ -1486,19 +1450,19 @@ msgstr ""
 msgid "No Envira galleries found in trash."
 msgstr ""
 
-#: includes/global/shortcode.php:800
+#: includes/global/shortcode.php:820
 msgid "The requested content cannot be loaded.<br/>Please try again later.</p>"
 msgstr ""
 
-#: includes/global/shortcode.php:801 includes/global/shortcode.php:1360
+#: includes/global/shortcode.php:821 includes/global/shortcode.php:1405
 msgid "Close"
 msgstr ""
 
-#: includes/global/shortcode.php:802 includes/global/shortcode.php:1350
+#: includes/global/shortcode.php:822 includes/global/shortcode.php:1395
 msgid "Next"
 msgstr ""
 
-#: includes/global/shortcode.php:803 includes/global/shortcode.php:1346
+#: includes/global/shortcode.php:823 includes/global/shortcode.php:1391
 msgid "Previous"
 msgstr ""
 

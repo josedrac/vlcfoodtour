@@ -750,11 +750,23 @@ class Envira_Gallery_Shortcode {
                             <?php if ( ! $this->get_config( 'keyboard', $data ) ) : ?>
                             keys: 0,
                             <?php endif; ?>
+                            <?php /* increase margin when there is a social bar vertical, default is 15 in fancybox.js */
+
+                                //print_r ($data); exit;
+
+                                if ( isset($data['config']['social_lightbox']) && $data['config']['social_lightbox'] == 1 &&
+                                   ( null !== $data['config']['social_lightbox_orientation'] && $data['config']['social_lightbox_orientation'] == "vertical" )  ):
+
+                            ?>
+                            margin: 50,
+                            <?php endif; ?>
+
                             arrows: <?php echo $this->get_config( 'arrows', $data ); ?>,
                             aspectRatio: <?php echo $this->get_config( 'aspect', $data ); ?>,
                             loop: <?php echo $this->get_config( 'loop', $data ); ?>,
                             mouseWheel: <?php echo $this->get_config( 'mousewheel', $data ); ?>,
                             preload: 1,
+
                             <?php
                             /* Get open and transition effects */
                             $lightbox_open_close_effect = $this->get_config( 'lightbox_open_close_effect', $data );
@@ -770,11 +782,14 @@ class Envira_Gallery_Shortcode {
                                 closeEffect: '<?php echo $lightbox_open_close_effect; ?>',
                                 <?php
                             } else {
+
+                                // easing effects have been depreciated, and will default back to 'swing'
+
                                 ?>
                                 openEffect: 'elastic', // FancyBox default is fade, should be elastic for the openEffect/closeEffect functions
                                 closeEffect: 'elastic',
-                                openEasing: '<?php echo ( $lightbox_open_close_effect == "Swing" ? "swing" : "easeIn" . $lightbox_open_close_effect ); ?>',
-                                closeEasing: '<?php echo ( $lightbox_open_close_effect == "Swing" ? "swing" : "easeOut" . $lightbox_open_close_effect ); ?>',
+                                openEasing: 'swing', // <?php echo ( $lightbox_open_close_effect == "Swing" ? "swing" : "easeIn" . $lightbox_open_close_effect ); ?>',
+                                closeEasing: 'swing', // <?php echo ( $lightbox_open_close_effect == "Swing" ? "swing" : "easeOut" . $lightbox_open_close_effect ); ?>',
                                 openSpeed: 500,
                                 closeSpeed: 500,
                                 <?php
@@ -787,9 +802,12 @@ class Envira_Gallery_Shortcode {
                                 prevEffect: '<?php echo $lightbox_transition_effect; ?>',
                                 <?php
                             } else {
+
+                                // easing effects have been depreciated, and will default back to 'swing'
+
                                 ?>
-                                nextEasing: '<?php echo ( $lightbox_transition_effect == "Swing" ? "swing" : "easeIn" . $lightbox_transition_effect ); ?>',
-                                prevEasing: '<?php echo ( $lightbox_transition_effect == "Swing" ? "swing" : "easeOut" . $lightbox_transition_effect ); ?>',
+                                nextEasing: 'swing', // '<?php echo ( $lightbox_transition_effect == "Swing" ? "swing" : "easeIn" . $lightbox_transition_effect ); ?>',
+                                prevEasing: 'swing', // '<?php echo ( $lightbox_transition_effect == "Swing" ? "swing" : "easeOut" . $lightbox_transition_effect ); ?>',
                                 nextSpeed: 600,
                                 prevSpeed: 600,
                                 <?php
@@ -798,11 +816,11 @@ class Envira_Gallery_Shortcode {
                             tpl: {
                                 wrap     : '<?php echo $this->get_lightbox_template( $data ); ?>',
                                 image    : '<img class="envirabox-image" src="{href}" alt="" data-envira-title="" data-envira-caption="" data-envira-index="" data-envira-data="" />',
-                                iframe   : '<iframe id="envirabox-frame{rnd}" name="envirabox-frame{rnd}" class="envirabox-iframe" frameborder="0" vspace="0" hspace="0" allowtransparency="true" wekitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
+                                iframe   : '<iframe id="envirabox-frame{rnd}" name="envirabox-frame{rnd}" class="envirabox-iframe" frameborder="0" vspace="0" hspace="0" allowtransparency="true" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
                                 error    : '<p class="envirabox-error"><?php echo __( 'The requested content cannot be loaded.<br/>Please try again later.</p>', 'envira-gallery' ); ?>',
-                                closeBtn : '<a title="<?php echo __( 'Close', 'envira-gallery' ); ?>" class="envirabox-item envirabox-close" href="#"></a>',
-                                next     : '<a title="<?php echo __( 'Next', 'envira-gallery' ); ?>" class="envirabox-nav envirabox-next envirabox-arrows-<?php echo $this->get_config( 'arrows_position', $data ); ?>" href="#"><span></span></a>',
-                                prev     : '<a title="<?php echo __( 'Previous', 'envira-gallery' ); ?>" class="envirabox-nav envirabox-prev envirabox-arrows-<?php echo $this->get_config( 'arrows_position', $data ); ?>" href="#"><span></span></a>'
+                                closeBtn : '<a title="<?php echo __( 'Close', 'envira-gallery' ); ?>" class="envirabox-item envirabox-close" href="#close"></a>',
+                                next     : '<a title="<?php echo __( 'Next', 'envira-gallery' ); ?>" class="envirabox-nav envirabox-next envirabox-arrows-<?php echo $this->get_config( 'arrows_position', $data ); ?>" href="#next"><span></span></a>',
+                                prev     : '<a title="<?php echo __( 'Previous', 'envira-gallery' ); ?>" class="envirabox-nav envirabox-prev envirabox-arrows-<?php echo $this->get_config( 'arrows_position', $data ); ?>" href="#prev"><span></span></a>'
                                 <?php do_action( 'envira_gallery_api_templates', $data ); ?>
                             },
                             helpers: {
@@ -864,6 +882,10 @@ class Envira_Gallery_Shortcode {
                                 <?php do_action( 'envira_gallery_api_before_load', $data ); ?>
                             },
                             afterLoad: function(){
+                                $( ".envirabox-overlay-fixed" ).on( "touchmove", function(e) {
+                                     e.preventDefault();
+                                });
+
                                 <?php do_action( 'envira_gallery_api_after_load', $data ); ?>
                             },
                             beforeShow: function(){
@@ -1214,41 +1236,62 @@ class Envira_Gallery_Shortcode {
             $mobile = wp_is_mobile();
         }
 
-        // Check if this Gallery uses a WordPress defined image size
-        $image_size = $this->get_config( 'image_size', $data );
-        if ( $image_size != 'default' && ! $retina ) {
-            // If image size is envira_gallery_random, get a random image size.
-            if ( $image_size == 'envira_gallery_random' ) {
+        // Define variable
+        $src = false;
 
-                // Get random image sizes that have been chosen for this Gallery.
-                $image_sizes_random = (array) $this->get_config( 'image_sizes_random', $data );
+        // If this image is an instagram, we grab the src and don't use the $id
+        // otherwise using the $id refers to a postID in the databaes and has been known
+        // at times to pull up the wrong thumbnail instead of the instagram one
 
-                if ( count( $image_sizes_random ) == 0 ) {
-                    // The user didn't choose any image sizes - use them all.
-                    $wordpress_image_sizes = Envira_Gallery_Common::get_instance()->get_image_sizes( true );
-                    $wordpress_image_size_random_key = array_rand( $wordpress_image_sizes, 1 );
-                    $image_size = $wordpress_image_sizes[ $wordpress_image_size_random_key ]['value'];
+        $instagram = false;
+
+        if ( !empty($item['src']) && strpos( $item['src'], 'cdninstagram' ) !== false ) :
+            // using 'cdninstagram' because it seems all urls contain it - but be watchful in the future
+            $instagram  = true;
+            $src        = $item['src'];
+            $image      = $item['src'];
+        endif;
+
+        if ( !$src ) :
+
+            // Check if this Gallery uses a WordPress defined image size
+            $image_size = $this->get_config( 'image_size', $data );
+            if ( $image_size != 'default' && ! $retina ) {
+                // If image size is envira_gallery_random, get a random image size.
+                if ( $image_size == 'envira_gallery_random' ) {
+
+                    // Get random image sizes that have been chosen for this Gallery.
+                    $image_sizes_random = (array) $this->get_config( 'image_sizes_random', $data );
+
+                    if ( count( $image_sizes_random ) == 0 ) {
+                        // The user didn't choose any image sizes - use them all.
+                        $wordpress_image_sizes = Envira_Gallery_Common::get_instance()->get_image_sizes( true );
+                        $wordpress_image_size_random_key = array_rand( $wordpress_image_sizes, 1 );
+                        $image_size = $wordpress_image_sizes[ $wordpress_image_size_random_key ]['value'];
+                    } else {
+                        $wordpress_image_size_random_key = array_rand( $image_sizes_random, 1 );
+                        $image_size = $image_sizes_random[ $wordpress_image_size_random_key ];
+                    }
+
+                    // Get the random WordPress defined image size
+                    $src = wp_get_attachment_image_src( $id, $image_size );
                 } else {
-                    $wordpress_image_size_random_key = array_rand( $image_sizes_random, 1 );
-                    $image_size = $image_sizes_random[ $wordpress_image_size_random_key ];
+                    // Get the requested WordPress defined image size
+                    $src = wp_get_attachment_image_src( $id, $image_size );
                 }
-
-                // Get the random WordPress defined image size
-                $src = wp_get_attachment_image_src( $id, $image_size );
             } else {
-                // Get the requested WordPress defined image size
-                $src = wp_get_attachment_image_src( $id, $image_size );
+                // Get the full image
+                $src = wp_get_attachment_image_src( $id, 'full' );
+
             }
-        } else {
-            // Get the full image
-            $src = wp_get_attachment_image_src( $id, 'full' );
-        }
+
+        endif;
 
         // Check if this returned an image
         if ( ! $src ) {
             // Fallback to the $item's image source
             $image = $item['src'];
-        } else {
+        } else if ( ! $instagram ) {
             $image = $src[0];
         }
 
@@ -1404,21 +1447,34 @@ class Envira_Gallery_Shortcode {
 
         // If we are on a mobile device, some config keys have mobile equivalents, which we need to check instead
         if ( wp_is_mobile() ) {
-	        if ( class_exists( 'Envira_Gallery' ) ) {
-	            $mobile_keys = array(
-	                'columns'           => 'mobile_columns',
-	                'lightbox_enabled'  => 'mobile_lightbox',
-	                'arrows'            => 'mobile_arrows',
-	                'toolbar'           => 'mobile_toolbar',
-	                'thumbnails'        => 'mobile_thumbnails',
-	            );
-	            $mobile_keys = apply_filters( 'envira_gallery_get_config_mobile_keys', $mobile_keys );
+            if ( class_exists( 'Envira_Gallery' ) ) {
+                $mobile_keys = array(
+                    'columns'           => 'mobile_columns',
+                    'lightbox_enabled'  => 'mobile_lightbox',
+                    'arrows'            => 'mobile_arrows',
+                    'toolbar'           => 'mobile_toolbar',
+                    'thumbnails'        => 'mobile_thumbnails',
+                );
+                $mobile_keys = apply_filters( 'envira_gallery_get_config_mobile_keys', $mobile_keys );
 
-	            if ( array_key_exists( $key, $mobile_keys ) ) {
-	                // Use the mobile array key to get the config value
-	                $key = $mobile_keys[ $key ];
-	            }
-	        }
+                // When on mobile, use used to blindly look at the mobile_social option to determine social sharing button output
+                // However, what we need to do is look to see if the settings are active on the addon first
+
+                if ( array_key_exists( 'social', $mobile_keys ) || array_key_exists( 'social_lightbox', $mobile_keys ) ) {
+                    if ( !$data['config']['social'] ) {
+                        unset( $mobile_keys['social'] );
+                    }
+                    if ( !$data['config']['social_lightbox'] ) {
+                        unset( $mobile_keys['social_lightbox'] );
+                    }
+                }
+
+                if ( array_key_exists( $key, $mobile_keys ) ) {
+                    // Use the mobile array key to get the config value
+                    $key = $mobile_keys[ $key ];
+                }
+            }
+
         }
 
         return isset( $data['config'][$key] ) ? $data['config'][$key] : $instance->get_config_default( $key );

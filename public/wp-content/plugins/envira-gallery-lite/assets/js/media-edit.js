@@ -13,7 +13,7 @@ var EnviraGalleryImage = Backbone.Model.extend( {
         'title':    '',
         'caption':  '',
         'alt':      '',
-        'link':     '',  
+        'link':     '',
     },
 
 } );
@@ -63,12 +63,12 @@ var EnviraGalleryEditView = wp.Backbone.View.extend( {
         'click .edit-media-header .left':               'loadPreviousItem',
         'click .edit-media-header .right':              'loadNextItem',
 
-        'keyup input':                                  'updateItem', 
-        'keyup textarea':                               'updateItem', 
+        'keyup input':                                  'updateItem',
+        'keyup textarea':                               'updateItem',
         'change input':                                 'updateItem',
         'change textarea':                              'updateItem',
         'blur textarea':                                'updateItem',
-        'change select':                                'updateItem', 
+        'change select':                                'updateItem',
 
         'click .actions a.envira-gallery-meta-submit':  'saveItem',
 
@@ -143,8 +143,8 @@ var EnviraGalleryEditView = wp.Backbone.View.extend( {
         // Delay is required for the first load for some reason
         setTimeout( function() {
             quicktags( {
-                id:     'caption', 
-                buttons:'strong,em,link,ul,ol,li,close' 
+                id:     'caption',
+                buttons:'strong,em,link,ul,ol,li,close'
             } );
             QTags._buttonsInit();
         }, 500 );
@@ -161,10 +161,10 @@ var EnviraGalleryEditView = wp.Backbone.View.extend( {
             // Disable right button
             this.$el.find( 'button.right' ).addClass( 'disabled' );
         }
-        
+
         // Return
         return this;
-        
+
     },
 
     /**
@@ -222,7 +222,7 @@ var EnviraGalleryEditView = wp.Backbone.View.extend( {
     * Load the previous model in the collection
     */
     loadPreviousItem: function() {
-        
+
         // Decrement the index
         this.attachment_index--;
 
@@ -281,7 +281,9 @@ var EnviraGalleryEditView = wp.Backbone.View.extend( {
     /**
     * Saves the image metadata
     */
-    saveItem: function() {
+    saveItem: function( event ) {
+
+	    event.preventDefault();
 
         // Tell the View we're loading
         this.trigger( 'loading' );
@@ -328,7 +330,7 @@ var EnviraGalleryEditView = wp.Backbone.View.extend( {
             },
             error: function( error_message ) {
 
-                // Tell wp.media we've finished, but there was an error 
+                // Tell wp.media we've finished, but there was an error
                 this.trigger( 'loaded loaded:error', error_message );
 
             }
@@ -350,7 +352,7 @@ var EnviraGalleryEditView = wp.Backbone.View.extend( {
     insertLink: function( event ) {
 
 
-    
+
     },
 
     /**
@@ -385,7 +387,7 @@ var EnviraGalleryEditView = wp.Backbone.View.extend( {
             },
             error: function( error_message ) {
 
-                // Tell wp.media we've finished, but there was an error 
+                // Tell wp.media we've finished, but there was an error
                 this.trigger( 'loaded loaded:error', error_message );
 
             }
@@ -425,7 +427,7 @@ var EnviraGalleryEditView = wp.Backbone.View.extend( {
             },
             error: function( error_message ) {
 
-                // Tell wp.media we've finished, but there was an error 
+                // Tell wp.media we've finished, but there was an error
                 this.trigger( 'loaded loaded:error', error_message );
 
             }
@@ -480,7 +482,7 @@ jQuery( document ).ready( function( $ ) {
 *
 * Called when images are added, deleted, reordered or selected
 *
-* @global           EnviraGalleryImages     The backbone collection of images 
+* @global           EnviraGalleryImages     The backbone collection of images
 * @param    bool    selected_only           Only populate collection with images the user has selected
 */
 function EnviraGalleryImagesUpdate( selected_only ) {
@@ -497,7 +499,7 @@ function EnviraGalleryImagesUpdate( selected_only ) {
 
         // Strip slashes from some fields
         envira_gallery_image.alt = EnviraGalleryStripslashes( envira_gallery_image.alt );
-        
+
         // Add the model to the collection
         EnviraGalleryImages.add( new EnviraGalleryImage( envira_gallery_image ) );
     } );

@@ -12,7 +12,7 @@ function sfsi_update_plugin()
 	}
 	
 	//Install version
-	update_option("sfsi_pluginVersion", "1.49");
+	update_option("sfsi_pluginVersion", "1.52");
 	
 	/*show notification*/
 	if(!get_option('show_notification'))
@@ -479,21 +479,20 @@ function sfsi_check_wp_head() {
 	    $search_header = "wp_head";
 	    $file_lines = @file($header);
 	    $foind_header=0;
-	    foreach ($file_lines as $line) {
-		    
-					    
+	    foreach ($file_lines as $line)
+		{
 		    $searchCount = substr_count($line, $search_header);
-		    
-		    if ($searchCount > 0) {
+		    if ($searchCount > 0)
+			{
 			    return true;
 		    }
-		    
-	    }
+		}
+		
 	    $path=pathinfo($_SERVER['REQUEST_URI']);
 	    if($path['basename']=="themes.php" || $path['basename']=="theme-editor.php" || $path['basename']=="admin.php?page=sfsi-options")
 	    {
-	     echo "<div class=\"error\" >" . "<p> Error : Please fix your theme to make plugins work correctly: Go to the <a href=\"theme-editor.php\">Theme Editor</a> and insert <code>&lt;?php wp_head(); ?&gt;</code> just before the <code>&lt;/head&gt;</code> line of your theme's <code>header.php</code> file." . "</p></div>";
-	    }		
+	     	echo "<div class=\"error\" >" . "<p> Error : Please fix your theme to make plugins work correctly: Go to the <a href=\"theme-editor.php\">Theme Editor</a> and insert <code>&lt;?php wp_head(); ?&gt;</code> just before the <code>&lt;/head&gt;</code> line of your theme's <code>header.php</code> file." . "</p></div>";
+	    }	
 	}
 }
 /* admin notice if wp_footer is missing in active theme */

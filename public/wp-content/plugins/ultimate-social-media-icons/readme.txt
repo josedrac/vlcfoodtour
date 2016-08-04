@@ -3,8 +3,8 @@ Contributors: socialdude
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=seb.richter%40gmx%2enet&lc=LI
 Tags: social media, facebook, instagram, youtube, twitter, share, social share, buttons, counter, pop-up, subscription, icons
 Requires at least: 2.8
-Tested up to: 4.5.2
-Stable tag: 1.4.9
+Tested up to: 4.5.3
+Stable tag: 1.5.2
 License: GPLv2 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -257,14 +257,19 @@ You cannot use the same plugin twice, however you can install both the USM as we
 
 == Changelog ==
 
-= 1.4.9 = 
-* SpecificFeeds subscriber counts retrieval caused high server load, fixed now
+= 1.5.2 = 
+* Corner case vulnerability fixed
+
+= 1.5.1 = 
+* Claiming process simplified
+* Mouse-over for custom icons sometimes showed wrong text, corrected now
 
 = 1.4.8 = 
 * Size of custom icons corrected
 * Cute G+ icon too small before, corrected now
 * Better description how to get G+ API key added
 * Unsupported "live" function in jquery fixed
+
 
 = 1.4.7 = 
 * Icons sometimes on top of each other - fixed
@@ -552,5 +557,5 @@ You cannot use the same plugin twice, however you can install both the USM as we
 
 == Upgrade Notice ==
 
-= 1.4.9 =
-Please upgrade!
+= 1.5.2 =
+Please upgrade 

@@ -44,7 +44,7 @@ $option8['sfsi_form_button_background'] = (isset($option8['sfsi_form_button_back
 	?>
     <p>
 		In addition to the email- or follow-icon you can also show a subscription form which maximizes chances that people subscribe to your site. To get access to the emails who subscribe, please
-		<a target="_new" href="<?php echo $connectToFeed; ?>">claim your feed</a>
+		<a class="pop-up" href="javascript:" data-id="sfsi_feedClaimingOverlay">click here</a>
     </p>
 	
 	

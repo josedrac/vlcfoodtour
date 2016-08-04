@@ -78,20 +78,35 @@ function sfsi_UploadSkins()
 add_action('wp_ajax_DeleteSkin','sfsi_DeleteSkin');
 function sfsi_DeleteSkin()
 {
+	if ( !wp_verify_nonce( $_POST['nonce'], "deleteCustomSkin")) {
+		echo  json_encode(array('res'=>"error")); exit;
+	} 
+	
 	$upload_dir = wp_upload_dir();
 	
-	if($_REQUEST['action'] == 'DeleteSkin' && isset($_REQUEST['iconname']) && !empty($_REQUEST['iconname']))
+	if($_POST['action'] == 'DeleteSkin' && isset($_POST['iconname']) && !empty($_POST['iconname']) && current_user_can('manage_options'))
 	{
-	   $imgurl = get_option( $_REQUEST['iconname'] );
-	   $path = parse_url($imgurl, PHP_URL_PATH);
-	   
-	   if(is_file($_SERVER['DOCUMENT_ROOT'] . $path))
-	   {
-        	unlink($_SERVER['DOCUMENT_ROOT'] . $path);
-       }
-	   
-	   delete_option( $_REQUEST['iconname'] );
-	   die(json_encode(array('res'=>'success')));
+		$iconsArray = array(
+			"rss_skin","email_skin","facebook_skin","twitter_skin","google_skin",
+			"share_skin","youtube_skin","linkedin_skin","pintrest_skin","instagram_skin"
+		);
+		if(in_array($_POST['iconname'], $iconsArray))
+		{
+			$imgurl = get_option( $_POST['iconname'] );
+			$path = parse_url($imgurl, PHP_URL_PATH);
+			
+			if(is_file($_SERVER['DOCUMENT_ROOT'] . $path))
+			{
+				unlink($_SERVER['DOCUMENT_ROOT'] . $path);
+			}
+		   
+			delete_option( $_POST['iconname'] );
+			die(json_encode(array('res'=>'success')));
+		}
+		else
+		{
+			die(json_encode(array('res'=>'error')));
+		}
 	}
 	else
 	{

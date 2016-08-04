@@ -2,7 +2,7 @@
 Contributors: griffinjt, smub
 Tags: wordpress gallery, gallery, wordpress gallery plugin, gallery plugin, responsive, responsive gallery, image gallery, image gallery plugin, responsive gallery plugin, responsive image gallery, responsive image gallery plugin, custom post types, slideshow, responsive slideshow, slideshow plugin, responsive slideshow plugin, rotator, image rotator, responsive rotator, jquery gallery, javascript gallery, jquery rotator, javascript rotator, picture gallery, photo gallery, photo rotator, shortcode, template tag, custom post type, media uploader, ajax, wordpress galleries, responsive galleries, fullscreen, deeplinking, best wordpress gallery, best wordpress gallery plugin, best gallery plugin, best gallery, best responsive gallery, best responsive wordpress gallery, best wp gallery, portfolio, design portfolio, lightroom, adobe lightroom, masonry gallery, polaroid gallery
 Requires at least: 4.0
-Tested up to: 4.5.2
+Tested up to: 4.6
 Stable tag: trunk
 License: GNU General Public License v2.0 or later
 
@@ -184,6 +184,17 @@ Envira Gallery is absolutely, positively the <a href="http://enviragallery.com/?
 Also, I'm an <a href="https://thomasgriffin.io" rel="me" title="WordPress Developer - Thomas Griffin">expert WordPress developer</a> and I write a lot about WordPress in general. You can check out my blog at the link above.
 
 == Changelog ==
+
+= 1.5.0.7 =
+* Fix: Addressing "unexpected end of input" JS Error.
+
+= 1.5.0.6 =
+* Fix: Took care of an issue with compatibility on PHP 5.2 that caused images not be editable in the image metadata modal
+* Fix: Make sure that the link modal appears above the metadata edit modal when inserting a link into the caption
+* Fix: Prevent the page from jumping to the top when navigating between images in the gallery lightbox
+* Fix: Prevent page from scrolling while lightbox is active on mobile devices
+* Fix: Images in the gallery on a mobile device now open with a single click
+* Fix: Adjust lightbox transitions so that they work properly
 
 = 1.5.0.5 =
 * Fix: Make sure columns on mobile correspond to the settings selected in general gallery config

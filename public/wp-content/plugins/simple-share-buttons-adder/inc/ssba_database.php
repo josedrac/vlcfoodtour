@@ -83,6 +83,11 @@ function ssba_activate() {
 
         // newsharecounts
         'twitter_newsharecounts' => '',
+
+        // new with sharethis
+        'facebook_insights' => '',
+        'facebook_app_id' => '',
+        'accepted_sharethis_terms' => 'Y',
     );
 
     // json encode
@@ -205,6 +210,19 @@ function upgrade_ssba($arrSettings, $version) {
         ssba_update_options($new);
     }
 
+    // if version is less than 6.2.0
+    if ($version < '6.2.0') {
+        // new settings
+        $new = array(
+            'facebook_insights' => '',
+            'facebook_app_id' => '',
+            'accepted_sharethis_terms' => '',
+        );
+
+        // update settings
+        ssba_update_options($new);
+    }
+
 	// button helper array
 	ssba_button_helper_array();
 
@@ -229,6 +247,9 @@ function ssba_button_helper_array()
 		'facebook' => array(
 			'full_name' 	=> 'Facebook'
 		),
+        'facebook_save' => array(
+            'full_name' 	=> 'Facebook Save'
+        ),
 		'flattr' => array(
 			'full_name' 	=> 'Flattr'
 		),
