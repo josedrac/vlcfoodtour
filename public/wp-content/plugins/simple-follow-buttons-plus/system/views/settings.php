@@ -199,9 +199,8 @@ function getSelectedsfbp($strSelectedsfbp)
             // for each included button
             foreach ($arrSelectedsfbp as $strSelected) {
                 // add a list item for each selected option
-                //$htmlSelectedList .= '<li class="sfbp-option-item" id="' . $strSelected . '"><a href="javascript:;" title="'.$arrButtons[$strSelected]['full_name'].'" class="sfbp-btn sfbp-' . $strSelected . '"><span class="sfbp-text">' . $arrButtons[$strSelected]['full_name'] . '</span></a></li>';
-                $htmlSelectedList .= '<li class="sfbp-option-item" id="' . $strSelected . '"><a href="javascript:;" title="'.$arrButtons[$strSelected]['full_name'].'" class="sfbp-btn sfbp-' . $strSelected . '"></a><span class="sfbp-text">' . $arrButtons[$strSelected]['full_name'] . '</span></li>';
-
+                $htmlSelectedList .= '<li class="sfbp-option-item" id="' . $strSelected . '"><a href="javascript:;" title="'.$arrButtons[$strSelected]['full_name'].'" class="sfbp-btn sfbp-' . $strSelected . '"><span class="sfbp-text">' . $arrButtons[$strSelected]['full_name'] . '</span></a></li>';
+                
             }
         }
     }
