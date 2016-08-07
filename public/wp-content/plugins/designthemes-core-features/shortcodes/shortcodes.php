@@ -762,7 +762,7 @@ class DTCoreShortcodesDefination {
 			$out3 = $out3.'<div class="testimonialSign">';
 			$out3 = $out3.'<p><a href="'.$url_tripadvisor.'" target="_blank">'.$nick.'</a></p>';
 			$out3 = $out3.'<p><a href="'.$url_tripadvisor.'" target="_blank">'.$location.'</a></p>';
-			$out3 = $out3.'<p><a href="'.$url_tripadvisor.'" target="_blank"><img class="tripadvisor" src="https://www.tripadvisor.es/img/cdsi/img2/branding/150_logo-11900-2.png" alt="tripadvisor"/></a></p>';
+			$out3 = $out3.'<p><a href="'.$url_tripadvisor.'" target="_blank"><img class="tripadvisor" src="http://www.valenciafoodtourspain.com/wp-content/uploads/2016/08/tripadvisor-compressor.png" alt="tripadvisor"/></a></p>';
 			$out3 = $out3.'</div>';
 			//error_log("shortcode type6");
 		}

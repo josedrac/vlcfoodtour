@@ -16,11 +16,15 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-<?php
+	<?php
+
 	global $dt_allowed_html_tags;
 	#Load Theme Styles...
 	if(dt_theme_option('integration', 'enable-header-code') != '') echo '<script type="text/javascript">'.wp_kses(stripslashes(dt_theme_option('integration', 'header-code')), $dt_allowed_html_tags).'</script>';
-	wp_head(); ?>
+	wp_head();
+
+	?>
+
 
 	<script id="eztixKioskLinkId" type="text/javascript">
     (function(){

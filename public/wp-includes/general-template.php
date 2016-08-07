@@ -2514,7 +2514,7 @@ function the_weekday_date($before='',$after='') {
 	echo $the_weekday_date;
 }
 
-/**
+/** 
  * Fire the wp_head action
  *
  * @since 1.2.0

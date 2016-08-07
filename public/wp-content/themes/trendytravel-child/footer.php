@@ -33,7 +33,9 @@
             <!-- footer ends here -->
 		</div>
     </div>
+
 <?php if(dt_theme_option('integration', 'enable-body-code') != '') echo '<script type="text/javascript">'.wp_kses(stripslashes(dt_theme_option('integration', 'body-code')), $dt_allowed_html_tags).'</script>';
 wp_footer(); ?>
+
 </body>
 </html>

@@ -976,7 +976,7 @@ select#calMonthSelect {
 /*end sections home */
 
 select {
-    height: 54px;
+    height: 44px;
 }
 select option {
     background-color: #a3865b;

@@ -1060,7 +1060,7 @@ function wp_print_footer_scripts() {
 	do_action( 'wp_print_footer_scripts' );
 }
 
-/**
+/** 
  * Wrapper for do_action('wp_enqueue_scripts')
  *
  * Allows plugins to queue scripts for the front end using wp_enqueue_script().

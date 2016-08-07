@@ -19,4 +19,6 @@
 ///Users/josedrac/gitjosedrac/valenciafoodtourspain/public/index.php
 ///Users/josedrac/gitjosedrac/valenciafoodtourspain/public/wp-includes/ChromePhp.pushpin
 
+///Users/josedrac/gitjosedrac/valenciafoodtourspain/public/wp-content/plugins/simple-follow-buttons-plus/system/lazy.php
+
 ?>

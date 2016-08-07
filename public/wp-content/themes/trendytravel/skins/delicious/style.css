@@ -287,3 +287,6 @@ ul.products li .onsale {
         background-size: 53px 50px;
     }
 }
+.selection-box:after {
+    background-image: url(images/select-compressor.png);
+}

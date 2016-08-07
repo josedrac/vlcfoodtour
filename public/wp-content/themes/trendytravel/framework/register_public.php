@@ -49,7 +49,7 @@ class DT_Theme_Walker_Category extends Walker_Category {
       extract($args);
       $cat_name = esc_attr( $category->name);
       $cat_name = apply_filters( 'list_cats', $cat_name, $category );
-	  
+
       $link = '<a href="' . get_term_link( $category->name, 'product_cat' ) . '" ';
       if ( $use_desc_for_title == 0 || empty($category->description) )
          $link .= 'title="' . sprintf(__( 'View all products under %s', 'iamd_text_domain' ), $cat_name) . '"';
@@ -115,8 +115,8 @@ function dt_theme_enqueue_scripts() {
 	$template_uri = get_template_directory_uri().'/framework';
 
 	wp_register_script('jq-html5', 'http://html5shiv.googlecode.com/svn/trunk/html5.js', array(), '3.6.2', true);
-	wp_register_script('jq-canvas', 'http://explorercanvas.googlecode.com/svn/trunk/excanvas.js', array(), '2.0', true);	
-	
+	wp_register_script('jq-canvas', 'http://explorercanvas.googlecode.com/svn/trunk/excanvas.js', array(), '2.0', true);
+
 	global $is_IE;
 	if( $is_IE ):
 		wp_enqueue_script('jq-html5');
@@ -127,7 +127,7 @@ function dt_theme_enqueue_scripts() {
 	if (is_singular() AND comments_open()):
 		 wp_enqueue_script( 'comment-reply' );
 	endif;
-	
+
 	//SCRIPTS VARIABLE...
 	$stickynav = ( dt_theme_option("general","enable-sticky-nav") ) ? "enable" : "disable";
 	$loadingbar = ( dt_theme_option("general","loading-bar") ) ? "disable" : "enable";
@@ -150,7 +150,7 @@ function dt_theme_enqueue_scripts() {
 		wp_enqueue_script('retina-script', $template_uri.'/js/public/retina.js',array(),false,true);
 
 	wp_enqueue_script('jq.stickynav', $template_uri.'/js/public/jquery.sticky.js', array(), false, true);
-	wp_enqueue_script('jq.smartresize', $template_uri.'/js/public/jquery.smartresize.js', array(), false, true);	
+	wp_enqueue_script('jq.smartresize', $template_uri.'/js/public/jquery.smartresize.js', array(), false, true);
 
 	wp_enqueue_script('jq.easing', $template_uri.'/js/public/jquery-easing-1.3.js',array(),false,true);
 	wp_enqueue_script('jq.validate', $template_uri.'/js/public/jquery.validate.min.js',array(),false,true);
@@ -436,7 +436,7 @@ function dt_theme_appearance_load_fonts() {
 		$font = implode(":300,400,400italic,700|", $custom_fonts);
 		$font .= ":300,400,400italic,700|";
 	endif;
-	
+
 	$font .= "Open+Sans:400,300,600,700%7COpen+Sans+Condensed:300,700%7CCourgette%7CPatua+One%7CDroid+Serif";
 	$protocol = is_ssl() ? 'https' : 'http';
 	$query_args = array('family' => $font, 'subset' => $subset);
@@ -514,7 +514,7 @@ function dt_theme_appearance_css() {
 
 		$font_type = dt_theme_option("appearance", "menu-font-type");
 		$style = dt_theme_option("appearance","menu-standard-font-style");
-		
+
 		if( !empty($font_type) ){
 		#Menu Font: Standard
 			$font = dt_theme_option("appearance","menu-standard-font");
@@ -540,7 +540,7 @@ function dt_theme_appearance_css() {
 			if (!empty($size) and ($size > 0)) {
 				$output .= "font-size:{$size}px; ";
 			}
-			
+
 			if( !empty( $style ) ){
 				$output .= "font-style: {$style}";
 			}
@@ -553,7 +553,7 @@ function dt_theme_appearance_css() {
 			$output .= "color:{$secondary_color}; ";
 			$output .= "}\r\t";
 		endif;
-		
+
 	endif; #Menu Section End
 
 	#Body Section
@@ -566,7 +566,7 @@ function dt_theme_appearance_css() {
 		if( !empty($font_type) ){
 		#Body Font: Standard
 			$body_font = dt_theme_option("appearance","body-standard-font");
-			
+
 		} else {
 		#Body Font: Google
 			$body_font = dt_theme_option("appearance", "body-font");
@@ -591,7 +591,7 @@ function dt_theme_appearance_css() {
 			if (!empty($body_font_size)) {
 				$output .= "font-size:{$body_font_size}px; ";
 			}
-			
+
 			if( !empty( $style ) ){
 				$output .= "font-style: {$style}";
 			}
@@ -617,14 +617,14 @@ function dt_theme_appearance_css() {
 		#Footer Title
 		$font_type = dt_theme_option("appearance", "footer-title-font-type");
 		$style = dt_theme_option("appearance","footer-title-standard-font-style");
-		
+
 		if( !empty($font_type) ){
 			#Footer Title Font : Standard Font
 			$footer_title_font = dt_theme_option("appearance","footer-title-standard-font");
 		} else {
-			#Footer Title Font : Google Font	
-			$footer_title_font = dt_theme_option("appearance", "footer-title-font");		
-		}		
+			#Footer Title Font : Google Font
+			$footer_title_font = dt_theme_option("appearance", "footer-title-font");
+		}
 		$footer_title_font_color = dt_theme_option("appearance", "footer-title-font-color");
 		$footer_title_font_size = dt_theme_option("appearance", "footer-font-size");
 		$footer_primary_color = dt_theme_option("appearance", "footer-primary-color");
@@ -645,7 +645,7 @@ function dt_theme_appearance_css() {
 			if (!empty($footer_title_font_size)) {
 				$output .= "font-size:{$footer_title_font_size}px; ";
 			}
-			
+
 			if( !empty( $style ) ){
 				$output .= "font-style: {$style}";
 			}
@@ -669,8 +669,8 @@ function dt_theme_appearance_css() {
 			#Footer Content Font : Standard Font
 			$footer_content_font = dt_theme_option("appearance","footer-content-standard-font");
 		} else {
-			#Footer Content Font : Google Font	
-			$footer_content_font = dt_theme_option("appearance", "footer-content-font");		
+			#Footer Content Font : Google Font
+			$footer_content_font = dt_theme_option("appearance", "footer-content-font");
 		}
 		$footer_content_font_color = dt_theme_option("appearance", "footer-content-font-color");
 		$footer_content_font_size = dt_theme_option("appearance", "footer-content-font-size");
@@ -689,7 +689,7 @@ function dt_theme_appearance_css() {
 			if (!empty($footer_content_font_size)) {
 				$output .= "font-size:{$footer_content_font_size}px !important; ";
 			}
-			
+
 			if( !empty( $style ) ) {
 				$output .= "font-style: {$style}";
 			}
@@ -712,7 +712,7 @@ function dt_theme_appearance_css() {
 		for ($i = 1; $i <= 6; $i++) :
 			$font_type = dt_theme_option("appearance", "H{$i}-font-type");
 			$style = dt_theme_option("appearance","H{$i}-standard-font-style");
-			
+
 			if( !empty($font_type) ){
 			#Menu Font: Standard
 				$font = dt_theme_option("appearance","H{$i}-standard-font");
@@ -746,54 +746,54 @@ function dt_theme_appearance_css() {
 	#Styling Settings
 	$disable_styling = dt_theme_option("appearance", "disable-styling-settings");
 	if (empty($disable_styling)) :
-	
+
 		$styling_top_bg_color = dt_theme_option('appearance','styling-topbar-bg-color');
 		$styling_top_text_color = dt_theme_option('appearance','styling-topbar-text-color');
 		$styling_header_bg_color = dt_theme_option('appearance','styling-header-bg-color');
 		$styling_header_active_menubg_color = dt_theme_option('appearance','styling-header-active-menubg-color');
 		$styling_bread_bg_color = dt_theme_option('appearance','styling-bread-bg-color');
 		$styling_bread_text_color = dt_theme_option('appearance','styling-bread-text-color');
-		
+
 		$styling_body_bg_color = dt_theme_option('appearance','styling-body-bg-color');
-		
+
 		$styling_footer_bg_color = dt_theme_option('appearance','styling-footer-bg-color');
 		$styling_footer_text_color = dt_theme_option('appearance','styling-footer-text-color');
 		$styling_sub_footer_bg_color = dt_theme_option('appearance','styling-sub-footer-bg-color');
 		$styling_sub_footer_text_color = dt_theme_option('appearance','styling-sub-footer-text-color');
-		
+
 		if(!empty($styling_top_bg_color) and $styling_top_bg_color != "#")
 			$output .= ".top-bar { background-color: $styling_top_bg_color; }" ;
-			
+
 		if(!empty($styling_top_text_color) and $styling_top_text_color != "#")
 			$output .= ".top-bar, .top-bar a { color: $styling_top_text_color; }" ;
-			
+
 		if(!empty($styling_header_bg_color) and $styling_header_bg_color != "#")
 			$output .= "header#header { background-color: $styling_header_bg_color; }" ;
-			
+
 		if(!empty($styling_header_active_menubg_color) and $styling_header_active_menubg_color != "#")
 			$output .= "#main-menu #menu-main-menu > li.current_page_item > a, #main-menu #menu-main-menu > li.current-menu-ancestor > a, .megamenu-child-container > ul.sub-menu > li > a, .megamenu-child-container > ul.sub-menu > li > .nolink-menu, .mobile-menu { background-color: $styling_header_active_menubg_color !important; }" ;
 
 		if(!empty($styling_bread_bg_color) and $styling_bread_bg_color != "#")
 			$output .= ".breadcrumb-wrapper { background-color: $styling_bread_bg_color; }" ;
-			
+
 		if(!empty($styling_bread_text_color) and $styling_bread_text_color != "#")
 			$output .= ".breadcrumb-wrapper, .breadcrumb-wrapper h1, .breadcrumb-wrapper .breadcrumb h4, .breadcrumb a { color: $styling_bread_text_color; }" ;
-			
+
 		if(!empty($styling_body_bg_color) and $styling_body_bg_color != "#")
 			$output .= "body { background-color: $styling_body_bg_color; }" ;
-			
+
 		if(!empty($styling_footer_bg_color) and $styling_footer_bg_color != "#")
 			$output .= "#footer .footer-widgets-wrapper { background-color: $styling_footer_bg_color; }" ;
-			
+
 		if(!empty($styling_footer_text_color) and $styling_footer_text_color != "#")
 			$output .= "#footer, #footer a, #footer h3, #footer p, #footer span, #footer h4, #footer li:before { color: $styling_footer_text_color; }" ;
 
 		if(!empty($styling_sub_footer_bg_color) and $styling_sub_footer_bg_color != "#")
 			$output .= "#footer .copyright { background-color: $styling_sub_footer_bg_color; }" ;
-			
+
 		if(!empty($styling_sub_footer_text_color) and $styling_sub_footer_text_color != "#")
 			$output .= "#footer .copyright, #footer .copyright a { color: $styling_sub_footer_text_color; }" ;
-					
+
 	endif;
 
 	#404 Settings
@@ -849,7 +849,7 @@ function dt_theme_slider_section($post_id) {
 	$tpl_default_settings = get_post_meta($post_id,'_tpl_default_settings',TRUE);
 	$tpl_default_settings = is_array($tpl_default_settings) ? $tpl_default_settings  : array();
 	$template_uri = get_template_directory();
-	
+
 	if(array_key_exists('show_slider',$tpl_default_settings) && array_key_exists('slider_type',$tpl_default_settings) ):
     	echo '<div class="banner">';
 			echo '<div id="slider-container">';
@@ -861,14 +861,14 @@ function dt_theme_slider_section($post_id) {
 					echo do_shortcode("[rev_slider $id]");
 				endif;
 			echo '</div>';
-			
+
 			if( array_key_exists("show_search_section",$tpl_default_settings) ):
 				if( array_key_exists("search_section_on_slider", $tpl_default_settings) ):
 					echo "<div class='container'>";
 					require_once $template_uri."/includes/hotels-searchform.php";
 					echo '</div>';
 				endif;
-			endif;			
+			endif;
 		echo '</div>';
 
 		if( array_key_exists("show_search_section",$tpl_default_settings) ):
@@ -880,7 +880,7 @@ function dt_theme_slider_section($post_id) {
 				echo "</div>";
 			endif;
 		endif;
-		
+
 	endif;
 }
 
@@ -923,22 +923,22 @@ function dt_theme_custom_comments($comment, $args, $depth) {
 			  edit_comment_link( __('Edit','iamd_text_domain'), ' ' ,'');
 			echo "</p>";
 	   break;
-	  
+
 	   default :
 	   case '' :
 			echo "<li ";
 			echo ' id="comment-';
 			  comment_ID();
 			echo '">';
-			
+
 			echo '<article class="comment">';
-			
+
 				echo '<header class="comment-author">';
 				  echo get_avatar( $comment, 85);
 				echo '</header>';
-					
+
 				echo '<section class="comment-details">';
-					
+
 					echo '<div class="author-name">';
 						echo ucfirst(get_comment_author_link());
 						echo '<span class="commentmetadata">'.human_time_diff( get_comment_time('U'), current_time('timestamp') ) . __(' ago', 'iamd_text_domain').'</span>';
@@ -947,19 +947,19 @@ function dt_theme_custom_comments($comment, $args, $depth) {
 					if($comment->comment_approved == '0'):
 					  echo '<p>'.__( 'Your comment is awaiting moderation.','iamd_text_domain').'</p>';
 					endif;
-					
+
 					echo '<div class="comment-body">';
 						comment_text();
 					echo '</div>';
-					
+
 					echo '<div class="reply">';
 						echo comment_reply_link( array_merge( $args, array('reply_text'=>__('Reply','iamd_text_domain'), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) );
 					echo '</div>';
-					
+
 					edit_comment_link( __('Edit','iamd_text_domain') );
-				  
+
 				echo '</section>';
-				
+
 			echo '</article>';
 	   break;
 	endswitch;
@@ -995,16 +995,16 @@ function dt_theme_hotel_comments($comment, $args, $depth) {
 			  edit_comment_link( __('Edit','iamd_text_domain'), ' ' ,'');
 			echo "</p>";
 	   break;
-	  
+
 	   default :
 	   case '' :
 			echo "<div ";
 			echo ' id="comment-';
 			  comment_ID();
 			echo '">';
-			
+
 			echo '<div class="review-item">';
-				
+
 				$title = get_comment_meta( $comment->comment_ID, 'title', true );
 				if(!empty($title))
 					echo '<h3>'.$title.'</h3>';
@@ -1018,9 +1018,9 @@ function dt_theme_hotel_comments($comment, $args, $depth) {
 						echo '('.$rating.' '.__('out of 5', 'iamd_text_domain').')';
 					echo '</div>';
 				endif;
-				
+
 				echo '<blockquote><q>&quot;'.get_comment_text().'&quot;</q></blockquote>';
-				
+
 				echo '<div class="author-detail">';
 					echo get_avatar( $comment, 62);
 					echo '<cite>'.ucfirst(get_comment_author_link());
@@ -1040,7 +1040,7 @@ class dt_theme_breadcrumb {
 	var $options;
 
 	function dt_theme_breadcrumb() {
-		
+
 		$delimiter = "";
 		if(dt_theme_option('general', 'breadcrumb-delimiter') == 'default')
 			$delimiter = 'class="'.dt_theme_option('general', 'breadcrumb-delimiter').'"';
@@ -1067,7 +1067,7 @@ class dt_theme_breadcrumb {
 			if(in_array('events-single', get_body_class())) {
 				echo '<h4>'.__('Event', 'iamd_text_domain').'</h4>';
 			}
-		  else	
+		  else
 			if ($output != NULL) {
 				echo "<h4>".$output."</h4>";
 			} else {
@@ -1093,13 +1093,13 @@ class dt_theme_breadcrumb {
 
 		if (is_single()) {
 			$category = get_the_category();
-			
+
 			if (is_attachment()) {
 				$my_query = get_post($der_post->post_parent);
 				$category = get_the_category($my_query->ID);
-				
+
 				if(empty($category)) return;
-				
+
 				$ID = $category[0]->cat_ID;
 				echo is_wp_error( $cat_parents = get_category_parents($ID, TRUE, $markup, FALSE) ) ? '' : $cat_parents;
 				previous_post_link("%link $markup");
@@ -1182,7 +1182,7 @@ class dt_theme_breadcrumb {
 		if (is_year()) {
 			return get_the_time('Y');
 		}
-		
+
 		if (is_month()) {
 			$k_year = get_the_time('Y');
 			echo "<a href='".get_year_link($k_year)."'>".$k_year."</a>".$markup;
@@ -1209,19 +1209,19 @@ class dt_theme_breadcrumb {
 		if (is_post_type_archive('dt_places')) {
 			return __("Places", 'iamd_text_domain');
 		}
-		
+
 		if (is_post_type_archive('forum')) {
 			return __("Forums", 'iamd_text_domain');
 		}
-		
+
 		if(in_array('events-archive', get_body_class())) {
 			return __('Events', 'iamd_text_domain');
 		}
-		
+
 		if (taxonomy_exists('topic-tag')) {
 			return get_the_title();
 		}
-		
+
 		if(in_array('buddypress', get_body_class()))  {
 			return get_the_title();
 		}
@@ -1235,19 +1235,19 @@ function dt_theme_color_picker(){
 
 	$patterns_url = IAMD_FW_URL."theme_options/images/pattern/";
 	$skins_url = IAMD_BASE_URL."images/style-picker/";
-	
+
 	$patterns = "";
 	$patterns_array =  dt_theme_listImage(get_template_directory()."/images/style-picker/patterns/");
-	
+
 	foreach($patterns_array as $k => $v){
 		$img = 	IAMD_BASE_URL."images/style-picker/patterns/".$k;
 		$patterns .= '<li>';
 		$patterns .= "<a id='{$v}' href='' title=''>";
 		$patterns .= "<img src='$img' alt='$v' title='$v' width='30' height='30' />";
 		$patterns .= '</a>';
-		$patterns .= '</li>'; 
+		$patterns .= '</li>';
 	}
-	
+
 	$colors = "";
 	foreach(getFolders(get_template_directory()."/skins") as $skin ):
 		$img = 	$skins_url.$skin.".jpg";
@@ -1257,13 +1257,13 @@ function dt_theme_color_picker(){
 		$colors .= '</a>';
 		$colors .= '</li>';
 	endforeach;
-	
+
 	$str = '<!-- **Trendy Travel Style Picker Wrapper** -->';
 	$str .= '<div class="trendy-travel-style-picker-wrapper">';
 	$str .= '	<a href="" title="" class="style-picker-ico"> <img src="'.IAMD_BASE_URL.'images/style-picker/picker-icon.png" alt="" title="" /> </a>';
 	$str .= '	<div id="travel-style-picker">';
 	$str .= '   	<h2>'.__('Select Your Style','iamd_text_domain').'</h2>';
-	
+
 	$str .= '       <h3>'.__('Choose your layout','iamd_text_domain').'</h3>';
 	$str .= '		<ul class="layout-picker">';
 	$str .= '       	<li> <a id="fullwidth" href="" title="" class="selected"> <img src="'.IAMD_BASE_URL.'images/style-picker/fullwidth.jpg" alt="" title="" /> </a> </li>';
@@ -1277,12 +1277,12 @@ function dt_theme_color_picker(){
 	$str .= '			</ul>';
 	$str .= '			<div class="hr"> </div>';
 	$str .= '		</div>';
-	
+
 	$str .= '		<h3>'.__('Color scheme','iamd_text_domain').'</h3>';
 	$str .= '		<ul class="color-picker">';
 	$str .= 		$colors;
-	$str .= '		</ul>';	
-	
+	$str .= '		</ul>';
+
 	$str .= '	</div>';
 	$str .= '</div><!-- **Trendy Travel Style Picker Wrapper - End** -->';
 
@@ -1302,8 +1302,8 @@ $dt_allowed_html_tags = array(
 	'b' => array(),
 	'base' => array('href' => array(), 'target' => array()),
 	'bdi' => array(),
-	'bdo' => array('dir' => array()), 
-	'blockquote' => array('cite' => array()), 
+	'bdo' => array('dir' => array()),
+	'blockquote' => array('cite' => array()),
 	'br' => array(),
 	'button' => array('autofocus' => array(), 'disabled' => array(), 'form' => array(), 'formaction' => array(), 'formenctype' => array(), 'formmethod' => array(), 'formnovalidate' => array(), 'formtarget' => array(), 'name' => array(), 'type' => array(), 'value' => array()),
 	'canvas' => array('height' => array(), 'width' => array()),
@@ -1328,50 +1328,50 @@ $dt_allowed_html_tags = array(
 	'figure' => array(),
 	'form' => array('accept' => array(), 'accept-charset' => array(), 'action' => array(), 'autocomplete' => array(), 'enctype' => array(), 'method' => array(), 'name' => array(), 'novalidate' => array(), 'target' => array(), 'id' => array(), 'class' => array()),
 	'h1' => array('class' => array()), 'h2' => array('class' => array()), 'h3' => array('class' => array()), 'h4' => array('class' => array()), 'h5' => array('class' => array()), 'h6' => array('class' => array()),
-	'hr' => array(), 
-	'i' => array('class' => array()), 
+	'hr' => array(),
+	'i' => array('class' => array()),
 	'iframe' => array('name' => array(), 'seamless' => array(), 'src' => array(), 'srcdoc' => array(), 'width' => array()),
 	'img' => array('alt' => array(), 'crossorigin' => array(), 'height' => array(), 'ismap' => array(), 'src' => array(), 'usemap' => array(), 'width' => array()),
 	'input' => array('align' => array(), 'alt' => array(), 'autocomplete' => array(), 'autofocus' => array(), 'checked' => array(), 'disabled' => array(), 'form' => array(), 'formaction' => array(), 'formenctype' => array(), 'formmethod' => array(), 'formnovalidate' => array(), 'formtarget' => array(), 'height' => array(), 'list' => array(), 'max' => array(), 'maxlength' => array(), 'min' => array(), 'multiple' => array(), 'name' => array(), 'pattern' => array(), 'placeholder' => array(), 'readonly' => array(), 'required' => array(), 'size' => array(), 'src' => array(), 'step' => array(), 'type' => array(), 'value' => array(), 'width' => array(), 'id' => array(), 'class' => array()),
 	'ins' => array('cite' => array(), 'datetime' => array()),
 	'label' => array('for' => array(), 'form' => array()),
-	'legend' => array('align' => array()), 
+	'legend' => array('align' => array()),
 	'li' => array('type' => array(), 'value' => array(), 'class' => array()),
 	'link' => array('crossorigin' => array(), 'href' => array(), 'hreflang' => array(), 'media' => array(), 'rel' => array(), 'sizes' => array(), 'type' => array()),
-	'main' => array(), 
-	'map' => array('name' => array()), 
-	'mark' => array(), 
+	'main' => array(),
+	'map' => array('name' => array()),
+	'mark' => array(),
 	'menu' => array('label' => array(), 'type' => array()),
 	'menuitem' => array('checked' => array(), 'command' => array(), 'default' => array(), 'disabled' => array(), 'icon' => array(), 'label' => array(), 'radiogroup' => array(), 'type' => array()),
 	'meta' => array('charset' => array(), 'content' => array(), 'http-equiv' => array(), 'name' => array()),
 	'object' => array('form' => array(), 'height' => array(), 'name' => array(), 'type' => array(), 'usemap' => array(), 'width' => array()),
 	'ol' => array('class' => array(), 'reversed' => array(), 'start' => array(), 'type' => array()),
-	'p' => array('class' => array()), 
-	'q' => array('cite' => array()), 
-	'section' => array(), 
+	'p' => array('class' => array()),
+	'q' => array('cite' => array()),
+	'section' => array(),
 	'select' => array('autofocus' => array(), 'disabled' => array(), 'form' => array(), 'multiple' => array(), 'name' => array(), 'required' => array(), 'size' => array()),
-	'small' => array(), 
+	'small' => array(),
 	'source' => array('media' => array(), 'src' => array(), 'type' => array()),
-	'span' => array('class' => array()), 
+	'span' => array('class' => array()),
 	'strong' => array(),
 	'style' => array('media' => array(), 'scoped' => array(), 'type' => array()),
 	'sub' => array(),
 	'sup' => array(),
-	'table' => array('sortable' => array()), 
-	'tbody' => array(), 
+	'table' => array('sortable' => array()),
+	'tbody' => array(),
 	'td' => array('colspan' => array(), 'headers' => array()),
 	'textarea' => array('autofocus' => array(), 'cols' => array(), 'disabled' => array(), 'form' => array(), 'maxlength' => array(), 'name' => array(), 'placeholder' => array(), 'readonly' => array(), 'required' => array(), 'rows' => array(), 'wrap' => array()),
 	'tfoot' => array(),
 	'th' => array('abbr' => array(), 'colspan' => array(), 'headers' => array(), 'rowspan' => array(), 'scope' => array(), 'sorted' => array()),
-	'thead' => array(), 
-	'time' => array('datetime' => array()), 
-	'title' => array(), 
-	'tr' => array(), 
-	'track' => array('default' => array(), 'kind' => array(), 'label' => array(), 'src' => array(), 'srclang' => array()), 
-	'u' => array(), 
-	'ul' => array('class' => array()), 
-	'var' => array(), 
-	'video' => array('autoplay' => array(), 'controls' => array(), 'height' => array(), 'loop' => array(), 'muted' => array(), 'muted' => array(), 'poster' => array(), 'preload' => array(), 'src' => array(), 'width' => array()), 
-	'wbr' => array(), 
+	'thead' => array(),
+	'time' => array('datetime' => array()),
+	'title' => array(),
+	'tr' => array(),
+	'track' => array('default' => array(), 'kind' => array(), 'label' => array(), 'src' => array(), 'srclang' => array()),
+	'u' => array(),
+	'ul' => array('class' => array()),
+	'var' => array(),
+	'video' => array('autoplay' => array(), 'controls' => array(), 'height' => array(), 'loop' => array(), 'muted' => array(), 'muted' => array(), 'poster' => array(), 'preload' => array(), 'src' => array(), 'width' => array()),
+	'wbr' => array(),
 );
 ?>

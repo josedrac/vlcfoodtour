@@ -94,7 +94,8 @@
 									if(empty($tweet['created_at'])){ $tweet['created_at'] = ''; }
 
 									//print '<li><span>'.tp_convert_links($tweet['text']).'</span><a class="twitter_time" target="_blank" href="http://twitter.com/'.$instance['username'].'/statuses/'.$tweet['status_id'].'">'.tp_relative_time($tweet['created_at']).'</a></li>';
-									print '<li><a class="twitter_time" target="_blank" href="http://twitter.com/'.$instance['username'].'/statuses/'.$tweet['status_id'].'">'.tp_convert_links($tweet['text']).'</a> '.tp_relative_time($tweet['created_at']).'</li>';
+									print '<li><a class="twitter_time" target="_blank" href="http://twitter.com/'.$instance['username'].'/statuses/'.$tweet['status_id'].'">'.$tweet['text'].'</a> '.tp_relative_time($tweet['created_at']).'</li>';
+									//print '<li>'.$tweet['text'].''.tp_relative_time($tweet['created_at']).'</li>';
 
 									if($fctr == $instance['tweetstoshow']){ break; }
 									$fctr++;
@@ -192,13 +193,16 @@
 								$target=$targetBlank ? " target=\"_blank\" " : "";
 
 							// convert link to url
-								$status = preg_replace('/\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[A-Z0-9+&@#\/%=~_|]/i', '<a href="\0" target="_blank">\0</a>', $status);
+								//$status = preg_replace('/\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[A-Z0-9+&@#\/%=~_|]/i', '<a href="\0" target="_blank">\0</a>', $status);
 
 							// convert @ to follow
-								$status = preg_replace("/(@([_a-z0-9\-]+))/i","<a href=\"http://twitter.com/$2\" title=\"Follow $2\" $target >$1</a>",$status);
+							//	$status = preg_replace("/(@([_a-z0-9\-]+))/i","<a href=\"http://twitter.com/$2\" title=\"Follow $2\" $target >$1</a>",$status);
+							//$status = preg_replace("/(@([_a-z0-9\-]+))/i","$1",$status);
+
 
 							// convert # to search
-								$status = preg_replace("/(#([_a-z0-9\-]+))/i","<a href=\"https://twitter.com/search?q=$2\" title=\"Search $1\" $target >$1</a>",$status);
+								//$status = preg_replace("/(#([_a-z0-9\-]+))/i","<a href=\"https://twitter.com/search?q=$2\" title=\"Search $1\" $target >$1</a>",$status);
+								//$status = preg_replace("/(#([_a-z0-9\-]+))/i","",$status);
 
 							// return the status
 								return $status;
