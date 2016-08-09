@@ -440,7 +440,7 @@ function dt_theme_appearance_load_fonts() {
 	$font .= "Open+Sans:400,300,600,700%7COpen+Sans+Condensed:300,700%7CCourgette%7CPatua+One%7CDroid+Serif";
 	$protocol = is_ssl() ? 'https' : 'http';
 	$query_args = array('family' => $font, 'subset' => $subset);
-	wp_enqueue_style('mytheme-google-fonts', add_query_arg($query_args, "$protocol://fonts.googleapis.com/css" ), array(), null);
+	//wp_enqueue_style('mytheme-google-fonts', add_query_arg($query_args, "$protocol://fonts.googleapis.com/css" ), array(), null);
 }
 ### --- ****  dt_theme_appearance_load_fonts() *** --- ###
 

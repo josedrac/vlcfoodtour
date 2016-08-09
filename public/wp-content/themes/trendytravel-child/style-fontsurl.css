@@ -21,12 +21,20 @@ Text Domain: iamd_text_domain
   font-style: normal;
 }*/
 
+/* latin */
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Serif'), local('DroidSerif'), url(http://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaIgp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 /* cyrillic-ext */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/DXI1ORHCpsQm3Vp6mXoaTQ7aC6SjiAOpAWOKfJDfVRY.woff2) format('woff2');
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTQ7aC6SjiAOpAWOKfJDfVRY.woff2) format('woff2');
   unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
 }
 /* cyrillic */
@@ -34,7 +42,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/DXI1ORHCpsQm3Vp6mXoaTRdwxCXfZpKo5kWAx_74bHs.woff2) format('woff2');
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRdwxCXfZpKo5kWAx_74bHs.woff2) format('woff2');
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* latin-ext */
@@ -42,7 +50,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/DXI1ORHCpsQm3Vp6mXoaTYjoYw3YTyktCCer_ilOlhE.woff2) format('woff2');
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTYjoYw3YTyktCCer_ilOlhE.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
@@ -50,7 +58,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/DXI1ORHCpsQm3Vp6mXoaTRampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* cyrillic-ext */
@@ -58,7 +66,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/K88pR3goAWT7BTt32Z01m4X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/K88pR3goAWT7BTt32Z01m4X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
   unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
 }
 /* cyrillic */
@@ -66,7 +74,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/RjgO7rYTmqiVp7vzi-Q5UYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/RjgO7rYTmqiVp7vzi-Q5UYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* latin-ext */
@@ -74,7 +82,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/u-WUoqrET9fUeobQW7jkRYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/u-WUoqrET9fUeobQW7jkRYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
@@ -82,7 +90,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* cyrillic-ext */
@@ -90,7 +98,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/MTP_ySUJH_bn48VBG8sNSg7aC6SjiAOpAWOKfJDfVRY.woff2) format('woff2');
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSg7aC6SjiAOpAWOKfJDfVRY.woff2) format('woff2');
   unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
 }
 /* cyrillic */
@@ -98,7 +106,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/MTP_ySUJH_bn48VBG8sNShdwxCXfZpKo5kWAx_74bHs.woff2) format('woff2');
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNShdwxCXfZpKo5kWAx_74bHs.woff2) format('woff2');
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* latin-ext */
@@ -106,7 +114,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/MTP_ySUJH_bn48VBG8sNSojoYw3YTyktCCer_ilOlhE.woff2) format('woff2');
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSojoYw3YTyktCCer_ilOlhE.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
@@ -114,7 +122,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/MTP_ySUJH_bn48VBG8sNShampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNShampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* cyrillic-ext */
@@ -122,7 +130,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/k3k702ZOKiLJc3WVjuplzA7aC6SjiAOpAWOKfJDfVRY.woff2) format('woff2');
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzA7aC6SjiAOpAWOKfJDfVRY.woff2) format('woff2');
   unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
 }
 /* cyrillic */
@@ -130,7 +138,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/k3k702ZOKiLJc3WVjuplzBdwxCXfZpKo5kWAx_74bHs.woff2) format('woff2');
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzBdwxCXfZpKo5kWAx_74bHs.woff2) format('woff2');
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* latin-ext */
@@ -138,7 +146,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/k3k702ZOKiLJc3WVjuplzIjoYw3YTyktCCer_ilOlhE.woff2) format('woff2');
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzIjoYw3YTyktCCer_ilOlhE.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
@@ -146,7 +154,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* cyrillic-ext */
@@ -154,7 +162,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 400;
-  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/xjAJXh38I15wypJXxuGMBvZraR2Tg8w2lzm7kLNL0-w.woff2) format('woff2');
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBvZraR2Tg8w2lzm7kLNL0-w.woff2) format('woff2');
   unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
 }
 /* cyrillic */
@@ -162,7 +170,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 400;
-  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/xjAJXh38I15wypJXxuGMBl4sYYdJg5dU2qzJEVSuta0.woff2) format('woff2');
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBl4sYYdJg5dU2qzJEVSuta0.woff2) format('woff2');
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* latin-ext */
@@ -170,7 +178,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 400;
-  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/xjAJXh38I15wypJXxuGMBqE8kM4xWR1_1bYURRojRGc.woff2) format('woff2');
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBqE8kM4xWR1_1bYURRojRGc.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
@@ -178,7 +186,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 400;
-  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/xjAJXh38I15wypJXxuGMBogp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBogp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* cyrillic-ext */
@@ -186,7 +194,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans Condensed';
   font-style: normal;
   font-weight: 300;
-  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/gk5FxslNkTTHtojXrkp-xE6du99w8ONfQrOf4kprgAx_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xE6du99w8ONfQrOf4kprgAx_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
   unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
 }
 /* cyrillic */
@@ -194,7 +202,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans Condensed';
   font-style: normal;
   font-weight: 300;
-  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/gk5FxslNkTTHtojXrkp-xK8wKBk9M_9zvJF5T73CXCh_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xK8wKBk9M_9zvJF5T73CXCh_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* latin-ext */
@@ -202,7 +210,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans Condensed';
   font-style: normal;
   font-weight: 300;
-  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/gk5FxslNkTTHtojXrkp-xD_0YkshJ_UyXEU-Q7eV4G5_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xD_0YkshJ_UyXEU-Q7eV4G5_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
@@ -210,7 +218,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans Condensed';
   font-style: normal;
   font-weight: 300;
-  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/gk5FxslNkTTHtojXrkp-xMmDra0ONnO3FPH--kzkC5zr7w4p9aSvGirXi6XmeXNA.woff2) format('woff2');
+  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xMmDra0ONnO3FPH--kzkC5zr7w4p9aSvGirXi6XmeXNA.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* cyrillic-ext */
@@ -218,7 +226,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans Condensed';
   font-style: normal;
   font-weight: 700;
-  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/gk5FxslNkTTHtojXrkp-xPX7z5o44AuUJ1t1avdkNXJ_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xPX7z5o44AuUJ1t1avdkNXJ_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
   unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
 }
 /* cyrillic */
@@ -226,7 +234,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans Condensed';
   font-style: normal;
   font-weight: 700;
-  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/gk5FxslNkTTHtojXrkp-xLLF6RfyvCYuuChpfFHKAr5_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xLLF6RfyvCYuuChpfFHKAr5_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* latin-ext */
@@ -234,7 +242,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans Condensed';
   font-style: normal;
   font-weight: 700;
-  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/gk5FxslNkTTHtojXrkp-xPJmhJzg6kSQTtrFMk-8lT5_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xPJmhJzg6kSQTtrFMk-8lT5_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
@@ -242,7 +250,7 @@ Text Domain: iamd_text_domain
   font-family: 'Open Sans Condensed';
   font-style: normal;
   font-weight: 700;
-  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/gk5FxslNkTTHtojXrkp-xIgEy7irt_A5K-aDq9kG7DHr7w4p9aSvGirXi6XmeXNA.woff2) format('woff2');
+  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xIgEy7irt_A5K-aDq9kG7DHr7w4p9aSvGirXi6XmeXNA.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin-ext */
@@ -250,7 +258,7 @@ Text Domain: iamd_text_domain
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 300;
-  src: local('Oswald Light'), local('Oswald-Light'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/l1cOQ90roY9yC7voEhngDIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  src: local('Oswald Light'), local('Oswald-Light'), url(http://fonts.gstatic.com/s/oswald/v11/l1cOQ90roY9yC7voEhngDIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
@@ -258,7 +266,7 @@ Text Domain: iamd_text_domain
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 300;
-  src: local('Oswald Light'), local('Oswald-Light'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/HqHm7BVC_nzzTui2lzQTDZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  src: local('Oswald Light'), local('Oswald-Light'), url(http://fonts.gstatic.com/s/oswald/v11/HqHm7BVC_nzzTui2lzQTDZBw1xU1rKptJj_0jans920.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin-ext */
@@ -266,7 +274,7 @@ Text Domain: iamd_text_domain
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
-  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/Qw6_9HvXRQGg5mMbFR3Phn-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://fonts.gstatic.com/s/oswald/v11/Qw6_9HvXRQGg5mMbFR3Phn-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
@@ -274,7 +282,7 @@ Text Domain: iamd_text_domain
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
-  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/_P8jt3Y65hJ9c4AzRE0V1OvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://fonts.gstatic.com/s/oswald/v11/_P8jt3Y65hJ9c4AzRE0V1OvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin-ext */
@@ -282,7 +290,7 @@ Text Domain: iamd_text_domain
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 700;
-  src: local('Oswald Bold'), local('Oswald-Bold'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/dI-qzxlKVQA6TUC5RKSb34X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  src: local('Oswald Bold'), local('Oswald-Bold'), url(http://fonts.gstatic.com/s/oswald/v11/dI-qzxlKVQA6TUC5RKSb34X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
@@ -290,7 +298,7 @@ Text Domain: iamd_text_domain
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 700;
-  src: local('Oswald Bold'), local('Oswald-Bold'), url(http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/fonts/bH7276GfdCjMjApa_dkG6ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  src: local('Oswald Bold'), local('Oswald-Bold'), url(http://fonts.gstatic.com/s/oswald/v11/bH7276GfdCjMjApa_dkG6ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin */
@@ -1350,182 +1358,3 @@ h3.testimonialTitle a:hover {
     color: #2c3e50;
 }
 /* end of testimonialTitle */
-/* pace-theme-loading-bar.css */
-.pace {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    -webkit-pointer-events: none;
-    pointer-events: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    z-index: 2000;
-    position: fixed;
-    margin: auto;
-    top: 12px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 200px;
-    height: 25px;
-    border: 2px solid #62a5a1;
-    background-color: #fff;
-}
-
-.pace .pace-progress {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-background-clip: padding-box;
-    -moz-background-clip: padding;
-    -webkit-transition: width 1s ease-in-out 1s linear;
-    -moz-transition: width 1s ease-in-out 1s linear;
-    -ms-transition: width 1s ease-in-out 1s linear;
-    -o-transition: width 1s ease-in-out 1s linear;
-    transition: width 1s ease-in-out 1s linear;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    max-width: 190px;
-    z-index: 2000;
-    display: block;
-    position: absolute;
-    left: 3px;
-    top: 3px;
-    height: 15px;
-    font-size: 12px;
-    background: #62a5a1;
-    color: #62a5a1;
-    line-height: 60px;
-    font-weight: 700;
-    font-family: Helvetica,Arial,"Lucida Grande",sans-serif;
-}
-
-.pace .pace-progress:after {
-    content: attr(data-progress-text);
-    display: inline-block;
-}
-
-.pace.pace-inactive {
-    display: none;
-}
-
-.cover {
-    background-color: white !important;
-}
-/* end pace-theme-loading-bar.css */
-
-/* http://www.valenciafoodtourspain.com/wp-content/plugins/cookie-law-info/css/cli-style.css?ver=1.5.3 */
-#cookie-law-info-bar {
-	border: 0;
-	font-size: 10pt;
-	margin: 0 auto;
-	padding: 5px 0;
-	position: absolute;
-	text-align: center;
-	width: 100%;
-	z-index: 9999;
-}
-#cookie-law-info-again {
-	font-size: 10pt;
-	margin: 0;
-	padding: 2px 10px;
-	text-align: center;
-	z-index: 9999;
-	cursor: pointer;
-}
-#cookie-law-info-bar span {
-	vertical-align: middle;
-}
-/** Buttons (http://papermashup.com/demos/css-buttons) */
-.cli-plugin-button, .cli-plugin-button:visited {
-	background: #222 url('../images/overlay.png') repeat-x;
-	display: inline-block;
-	padding: 5px 10px 6px;
-	color: #fff;
-	text-decoration: none;
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
-	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
-	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
-	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
-	border-bottom: 1px solid rgba(0,0,0,0.25);
-	position: relative;
-	cursor: pointer;
-	margin: auto 10px;
-}
-.cli-plugin-button:hover {
-	background-color: #111;
-	color: #fff;
-}
-.cli-plugin-button:active {
-	top: 1px;
-}
-.small.cli-plugin-button, .small.cli-plugin-button:visited {
-	font-size: 11px;
-}
-.cli-plugin-button, .cli-plugin-button:visited,
-	.medium.cli-plugin-button, .medium.cli-plugin-button:visited {
-	font-size: 13px;
-	font-weight: bold;
-	line-height: 1;
-	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
-}
-.large.cli-plugin-button, .large.cli-plugin-button:visited {
-	font-size: 14px;
-	padding: 8px 14px 9px;
-}
-.super.cli-plugin-button, .super.cli-plugin-button:visited {
-	font-size: 34px;
-	padding: 8px 14px 9px;
-}
-.pink.cli-plugin-button, .magenta.cli-plugin-button:visited {
-	background-color: #e22092;
-}
-.pink.cli-plugin-button:hover {
-	background-color: #c81e82;
-}
-.green.cli-plugin-button, .green.cli-plugin-button:visited {
-	background-color: #91bd09;
-}
-.green.cli-plugin-button:hover {
-	background-color: #749a02;
-}
-.red.cli-plugin-button, .red.cli-plugin-button:visited {
-	background-color: #e62727;
-}
-.red.cli-plugin-button:hover {
-	background-color: #cf2525;
-}
-.orange.cli-plugin-button, .orange.cli-plugin-button:visited {
-	background-color: #ff5c00;
-}
-.orange.cli-plugin-button:hover {
-	background-color: #d45500;
-}
-.blue.cli-plugin-button, .blue.cli-plugin-button:visited {
-	background-color: #2981e4;
-}
-.blue.cli-plugin-button:hover {
-	background-color: #2575cf;
-}
-.yellow.cli-plugin-button, .yellow.cli-plugin-button:visited {
-	background-color: #ffb515;
-}
-.yellow.cli-plugin-button:hover {
-	background-color: #fc9200;
-}
-/* http://www.valenciafoodtourspain.com/wp-content/plugins/cookie-law-info/css/cli-style.css?ver=1.5.3 */

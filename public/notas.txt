@@ -1,0 +1,74 @@
+Si se comprime http://www.valenciafoodtourspain.com/…travel/skins/delicious/images/select.png sin pérdida de información, supondría un ahorro de 48,5 KB (reducción del 99 %).
+Si se comprime http://www.valenciafoodtourspain.com/…ds/2016/07/Tapas-Tour-Valencia-1-300.jpg sin pérdida de información, supondría un ahorro de 27,6 KB (reducción del 38 %).
+Si se comprime http://www.valenciafoodtourspain.com/…ds/2016/07/Tapas-Tour-Valencia-3-300.jpg sin pérdida de información, supondría un ahorro de 27,5 KB (reducción del 40 %).
+Si se comprime http://www.valenciafoodtourspain.com/…ploads/2016/07/Tapas-Tour-Valencia-4.jpg sin pérdida de información, supondría un ahorro de 25,8 KB (reducción del 36 %).
+Si se comprime http://www.valenciafoodtourspain.com/…ds/2016/07/Tapas-Tour-Valencia-photo.jpg sin pérdida de información, supondría un ahorro de 24,5 KB (reducción del 41 %).
+Si se comprime http://www.valenciafoodtourspain.com/…loads/2016/05/Imagen1-e1464676923261.png sin pérdida de información, supondría un ahorro de 5,7 KB (reducción del 31 %).
+Si se comprime http://www.valenciafoodtourspain.com/wp-content/uploads/2016/06/Design-1.png sin pérdida de información, supondría un ahorro de 4,4 KB (reducción del 18 %).
+Al comprimir o modificar el tamaño de http://www.valenciafoodtourspain.com/wp-content/uploads/2016/08/avatar.jpg puedes ahorrarte 2,9 KB (un 62 % menos).
+Si se comprime http://www.valenciafoodtourspain.com/wp-content/uploads/2016/05/snapcode.png sin pérdida de información, supondría un ahorro de 2,7 KB (reducción del 15 %).
+Al comprimir o modificar el tamaño de http://www.valenciafoodtourspain.com/…wp-content/uploads/2016/08/avatar031.jpg puedes ahorrarte 2 KB (un 59 % menos).
+Al comprimir o modificar el tamaño de http://www.valenciafoodtourspain.com/…wp-content/uploads/2016/08/avatar049.jpg puedes ahorrarte 1,8 KB (un 59 % menos).
+Si se comprime https://www.tripadvisor.com/…/cdsi/img2/branding/150_logo-11900-2.png sin pérdida de información, supondría un ahorro de 849 B (reducción del 40 %).
+Si se comprime http://www.valenciafoodtourspain.com/…ns/recent-tweets-widget/assets/tweet.png sin pérdida de información, supondría un ahorro de 649 B (reducción del 48 %).
+
+
+
+
+
+
+http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel/skins/delicious/images/select.png
+http://www.valenciafoodtourspain.com/wp-content/uploads/2016/07/Tapas-Tour-Valencia-1-300.jpg
+http://www.valenciafoodtourspain.com/wp-content/uploads/2016/07/Tapas-Tour-Valencia-3-300.jpg
+http://www.valenciafoodtourspain.com/wp-content/uploads/2016/07/Tapas-Tour-Valencia-4.jpg
+http://www.valenciafoodtourspain.com/wp-content/uploads/2016/07/Tapas-Tour-Valencia-photo.jpg
+http://www.valenciafoodtourspain.com/wp-content/uploads/2016/05/Imagen1-e1464676923261.png
+http://www.valenciafoodtourspain.com/wp-content/uploads/2016/06/Design-1.png
+https://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png
+http://www.valenciafoodtourspain.com/wp-content/plugins/recent-tweets-widget/assets/tweet.png
+
+
+
+<div id="TA_selfserveprop508" class="TA_selfserveprop">
+<ul id="Za431Fkmd" class="TA_links w0r61QASOT">
+<li id="Jn5AbLptY91S" class="tSgR390Ai">
+<a target="_blank" href="https://www.tripadvisor.com/"><img src="http://www.valenciafoodtourspain.com/wp-content/uploads/2016/08/tripadvisorlogo.png" alt="TripAdvisor"/></a>
+</li>
+</ul>
+</div>
+<script src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=508&amp;locationId=10486452&amp;lang=en_US&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=false&amp;iswide=false&amp;border=true&amp;display_version=2"></script>
+
+
+
+http://www.valenciafoodtourspain.com/wp-content/themes/trendytravel-child/tripadvisor.js
+
+
+
+
+
+
+http://www.valenciafoodtourspain.com/…/shortcodes/css/animations.css?ver=4.5.3
+http://www.valenciafoodtourspain.com/…/shortcodes/css/shortcodes.css?ver=4.5.3
+http://www.valenciafoodtourspain.com/…age-builder/css/animations.css?ver=4.5.3
+http://www.valenciafoodtourspain.com/…der/static/css/layerslider.css?ver=5.6.9
+http://fonts.googleapis.com/…300,regular,700&subset=latin%2Clatin-ext
+http://www.valenciafoodtourspain.com/…form-7/includes/css/styles.css?ver=4.4.2
+http://www.valenciafoodtourspain.com/…kie-law-info/css/cli-style.css?ver=1.5.3
+http://www.valenciafoodtourspain.com/…ets-widget/tp_twitter_plugin.css?ver=1.0
+http://www.valenciafoodtourspain.com/…llow-buttons-plus/sfbp.min.css?ver=4.5.3
+http://www.valenciafoodtourspain.com/…lug/assets/css/qts-default.css?ver=4.5.3
+http://www.valenciafoodtourspain.com/…avel/skins/delicious/style.css?ver=4.5.3
+http://www.valenciafoodtourspain.com/…es/trendytravel/css/rating.css?ver=4.5.3
+http://www.valenciafoodtourspain.com/…s/trendytravel/css/isotope.css?ver=4.5.3
+http://www.valenciafoodtourspain.com/…endytravel/css/tooltipster.css?ver=4.5.3
+http://www.valenciafoodtourspain.com/…endytravel/css/prettyPhoto.css?ver=4.5.3
+http://www.valenciafoodtourspain.com/…ravel/css/font-awesome.min.css?ver=4.5.3
+http://www.valenciafoodtourspain.com/…/trendytravel/css/colorbox.css?ver=4.5.3
+http://www.valenciafoodtourspain.com/…travel/css/jquery.fancybox.css?ver=4.5.3
+http://www.valenciafoodtourspain.com/…css/pace-theme-loading-bar.css?ver=4.5.3
+http://www.valenciafoodtourspain.com/…s/trendytravel-child/style.css?ver=4.5.3
+http://www.valenciafoodtourspain.com/…wp-content/themes/trendytravel/style.css
+http://www.valenciafoodtourspain.com/…ontent/themes/trendytravel/css/reset.css
+http://www.valenciafoodtourspain.com/…rendytravel/css/responsive.css?ver=4.5.3
+http://www.valenciafoodtourspain.com/…vel-child/responsive-child.css?ver=4.5.3
+http://fonts.googleapis.com/…00%7CCourgette%7CPatua+One%7CDroid+Serif
