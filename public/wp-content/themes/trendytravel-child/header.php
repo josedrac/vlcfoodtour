@@ -24,7 +24,7 @@
 	wp_head();
 
 	?>
-
+	<script src="//code.tidio.co/1vej91zjynd8z2ppc4bpagbwmin5cjie.js"></script>
 
 </head>
 
@@ -120,7 +120,7 @@
                             </div>
 							<ul class="menu-idioma">
 								<li class="qts_lang_item"><a href="http://www.valenciafoodtourspain.com" lang="en" hreflang="en" class="qts_both qtrans_flag qtrans_flag_en"><img width="18" height="12" src="http://www.valenciafoodtourspain.com/wp-content/plugins/qtranslate-x/flags/gb.png" alt="English">English</a></li>
-								<li class="qts_lang_item last-child"><a href="http://www.valenciafoodtourspain.ru" lang="ru" hreflang="ru" class="qts_both qtrans_flag qtrans_flag_ru"><img width="18" height="12" src="http://www.valenciafoodtourspain.com/wp-content/plugins/qtranslate-x/flags/ru.png" alt="Русский">Русский</a></li>
+								<li class="qts_lang_item last-child"><a href="http://www.foodtourspain.ru" lang="ru" hreflang="ru" class="qts_both qtrans_flag qtrans_flag_ru"><img width="18" height="12" src="http://www.valenciafoodtourspain.com/wp-content/plugins/qtranslate-x/flags/ru.png" alt="Русский">Русский</a></li>
 							</ul>
                         	<nav id="main-menu">
 
@@ -135,7 +135,7 @@
 									//wp_nav_menu( array('theme_location' => 'primary-menu', 'container'  => false, 'menu_id' => 'menu-main-menu', 'menu_class' => 'menu', 'fallback_cb' => 'dt_theme_default_navigation', 'walker' => new DTFrontEndMenuWalker()));
 									//wp_nav_menu( 'theme_location' => 'primary-menu', 'container'  => false, 'menu_id' => 'menu-main-menu', 'menu_class' => 'menu', 'fallback_cb' => 'dt_theme_default_navigation', 'walker' => new DTFrontEndMenuWalker()));
 									//wp_nav_menu( array( 'items_wrap' => '<ul id="%1$s" class="%2$s"><li><a href="http://www.google.com">go to google</a></li>%3$s</ul>' ) );
-									wp_nav_menu( array('theme_location' => 'primary-menu', 'container'  => false, 'menu_id' => 'menu-main-menu', 'menu_class' => 'menu', 'fallback_cb' => 'dt_theme_default_navigation', 'walker' => new DTFrontEndMenuWalker(), 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s<li class="%2$s hide-desktop"><a href="http://www.valenciafoodtourspain.com" lang="en" hreflang="en" class="qts_both-mobile qtrans_flag qtrans_flag_en">English <img width="18" height="12" src="http://www.valenciafoodtourspain.com/wp-content/plugins/qtranslate-x/flags/gb.png" alt="English"></a></li><li class="%2$s hide-desktop"><a href="http://www.valenciafoodtourspain.ru" lang="ru" hreflang="ru" class="qts_both-mobile qtrans_flag qtrans_flag_ru">Русский <img width="18" height="12" src="http://www.valenciafoodtourspain.com/wp-content/plugins/qtranslate-x/flags/ru.png" alt="Русский"></a></li></ul>' ));
+									wp_nav_menu( array('theme_location' => 'primary-menu', 'container'  => false, 'menu_id' => 'menu-main-menu', 'menu_class' => 'menu', 'fallback_cb' => 'dt_theme_default_navigation', 'walker' => new DTFrontEndMenuWalker(), 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s<li class="%2$s hide-desktop"><a href="http://www.valenciafoodtourspain.com" lang="en" hreflang="en" class="qts_both-mobile qtrans_flag qtrans_flag_en">English <img width="18" height="12" src="http://www.valenciafoodtourspain.com/wp-content/plugins/qtranslate-x/flags/gb.png" alt="English"></a></li><li class="%2$s hide-desktop"><a href="http://www.foodtourspain.ru" lang="ru" hreflang="ru" class="qts_both-mobile qtrans_flag qtrans_flag_ru">Русский <img width="18" height="12" src="http://www.valenciafoodtourspain.com/wp-content/plugins/qtranslate-x/flags/ru.png" alt="Русский"></a></li></ul>' ));
 
 								endif; ?>
 
