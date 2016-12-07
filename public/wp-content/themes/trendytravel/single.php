@@ -1,14 +1,14 @@
 <?php get_header();
 
 	while(have_posts()): the_post();
-		
+
 	  //GETTING META VALUES...
 	  $meta_set = get_post_meta($post->ID, '_dt_post_settings', true);
 	  if($GLOBALS['force_enable'] == true)
 	  	$page_layout = $GLOBALS['page_layout'];
 	  else
 	  	$page_layout = !empty($meta_set['layout']) ? $meta_set['layout'] : $GLOBALS['page_layout'];
-	  
+
 	  //BREADCRUMP...
 	  get_template_part('includes/breadcrumb_section'); ?>
 
@@ -16,7 +16,7 @@
           <div class="container">
               <div class="dt-sc-hr-invisible"></div>
               <div class="dt-sc-hr-invisible-small"></div>
-              
+
               <?php if($page_layout == 'with-left-sidebar'): ?>
               	  <section class="secondary-sidebar secondary-has-left-sidebar" id="secondary-left"><?php get_sidebar('left'); ?></section>
               <?php elseif($page_layout == 'with-both-sidebar'): ?>
@@ -37,7 +37,7 @@
 					  <div class="blog-entry-inner">
                           <div class="entry-meta">
                               <a class="entry_format" title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"> </a><?php
-							  if(isset($meta_set['disable-date-info']) == ""): ?>                              
+							  if(isset($meta_set['disable-date-info']) == ""): ?>
                                   <div class="date">
                                       <span><?php echo get_the_date('d'); ?></span>
                                       <?php echo get_the_date('M'); ?> <br /><?php echo get_the_date('Y'); ?>
@@ -86,7 +86,7 @@
                                               if( array_key_exists('oembed-url', $post_meta) ):
 											  	echo '<div class="entry-thumb-wrapper">';
                                                   echo "<div class='dt-video-wrap'>".wp_oembed_get($post_meta['oembed-url']).'</div>';
-												echo '</div>';  
+												echo '</div>';
                                               elseif( array_key_exists('self-hosted-url', $post_meta) ):
 											  	echo '<div class="entry-thumb-wrapper">';
                                                   echo "<div class='dt-video-wrap'>".wp_video_shortcode( array('src' => $post_meta['self-hosted-url']) ).'</div>';
@@ -129,13 +129,13 @@
 
                           <div class="entry-details">
                               <div class="entry-title">
-                                  <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                                  <h1><?php the_title(); ?></h1>
                               </div>
                               <div class="entry-metadata"><?php
 								 if(isset($meta_set['disable-author-info']) == ""): ?>
                                    <p class="author"><span class="fa fa-user"> </span><a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author_meta('display_name'); ?></a></p><?php
                                  endif;
-                                 if(isset($meta_set['disable-comment-info']) == ""): ?>								
+                                 if(isset($meta_set['disable-comment-info']) == ""): ?>
                                    <p><?php comments_popup_link('<span class="fa fa-comment"> </span>0', '<span class="fa fa-comment"> </span>1', '<span class="fa fa-comment"> </span>%', '', '<span class="fa fa-comment"> </span>0'); ?></p><?php
                                  endif; ?>
                               </div>
@@ -152,7 +152,7 @@
                                   dt_theme_social_bookmarks('sb-post');
                                   if(dt_theme_option('integration', 'enable-single-post-bottom-code') != '') echo wp_kses(stripslashes(dt_theme_option('integration', 'single-post-bottom-code')), $dt_allowed_html_tags); ?>
                               </div><?php
-							  
+
 							  if(isset($meta_set['disable-tag-info']) == ""):
 								the_tags('<div class="tags"><span class="fa fa-tags"> </span> '.__('Posted In: ', 'iamd_text_domain'), '', '</div>');
 							  endif; ?>
@@ -174,7 +174,7 @@
 							  endif; ?>
                           </div>
                       </div>
-                      
+
                       <div class="author-info">
                           <h2 class="section-title"><?php _e('About the Author', 'iamd_text_domain'); ?></h2>
                           <div class="thumb">
@@ -201,7 +201,7 @@
               <?php elseif($page_layout == 'with-both-sidebar'): ?>
               	  <section class="secondary-sidebar secondary-has-both-sidebar" id="secondary-right"><?php get_sidebar('right'); ?></section>
               <?php endif;
-			  
+
         endwhile; ?>
           </div>
       </div>

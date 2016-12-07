@@ -6,7 +6,6 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<?php is_dt_theme_moible_view(); ?>
-	<meta name="description" content="<?php bloginfo('description'); ?>"/>
 	<meta name="author" content="delicious valencia"/>
     <meta name="p:domain_verify" content="1bab5b0c08ffad3010ba048226ddcb3e"/>
 
@@ -79,8 +78,8 @@
 								$height = dt_theme_option('general','retina-logo-height');
 								$height = !empty($height) ? $height."px;" : "88px";?>
 								<a href="<?php echo home_url();?>" title="<?php bloginfo('title'); ?>">
-									<img class="normal_logo" src="<?php echo esc_url($url);?>" alt="<?php bloginfo('title'); ?>" title="<?php bloginfo('title'); ?>" />
-									<img class="retina_logo" src="<?php echo esc_url($retina_url);?>" alt="<?php bloginfo('title'); ?>" title="<?php bloginfo('title'); ?>" style="width:<?php echo esc_attr($width);?>; height:<?php echo esc_attr($height);?>;"/>
+									<img class="normal_logo visible-lg" src="<?php echo esc_url($url);?>" alt="<?php bloginfo('title'); ?>" title="<?php bloginfo('title'); ?>" />
+									<img class="visible-xs" src="<?php echo esc_url($retina_url);?>" alt="<?php bloginfo('title'); ?>" title="<?php bloginfo('title'); ?>" style="width:<?php echo esc_attr($width);?>; "/>
 								</a><?php
 							else: ?>
 								<div class="logo-title">
@@ -107,8 +106,8 @@
 										$height = dt_theme_option('general','retina-logo-height');
 										$height = !empty($height) ? $height."px;" : "88px";?>
 										<a href="<?php echo home_url();?>" title="<?php bloginfo('title'); ?>">
-											<img class="normal_logo" src="<?php echo esc_url($url);?>" alt="<?php bloginfo('title'); ?>" title="<?php bloginfo('title'); ?>" />
-											<img class="retina_logo" src="<?php echo esc_url($retina_url);?>" alt="<?php bloginfo('title'); ?>" title="<?php bloginfo('title'); ?>" style="width:<?php echo esc_attr($width);?>; height:<?php echo esc_attr($height);?>;"/>
+											<img class="normal_logo visible-lg" src="<?php echo esc_url($url);?>" alt="<?php bloginfo('title'); ?>" title="<?php bloginfo('title'); ?>" />
+											<img class="visible-xs" src="<?php echo esc_url($retina_url);?>" alt="<?php bloginfo('title'); ?>" title="<?php bloginfo('title'); ?>" style="width:<?php echo esc_attr($width);?>; ?>;"/>
 										</a><?php
 									else: ?>
 										<div class="logo-title">
@@ -119,7 +118,14 @@
 								<span class="dt-menu-toggle-icon"></span>
                             </div>
 							<ul class="menu-idioma">
-								<li class="qts_lang_item"><a href="http://www.valenciafoodtourspain.com/en/" lang="en" hreflang="en" class="qts_both qtrans_flag qtrans_flag_en"><img width="18" height="12" src="http://www.valenciafoodtourspain.com/wp-content/plugins/qtranslate-x/flags/gb.png" alt="English">English</a></li>
+                                <li class="qts_lang_item">
+                                    <a href="https://kiosk.eztix.co/kiosk-gift/269824" class="qts_both qtrans_flag" target="_blank"><?php _e('GIFT VOUCHER'); ?></a>
+                                    &nbsp;&nbsp;
+                                </li>
+                                <li class="qts_lang_item">
+                                    <?php _e('<a href="http://www.valenciafoodtourspain.com/en/about-me/" class="qts_both qtrans_flag">ABOUT ME</a>'); ?>&nbsp;&nbsp;
+                                </li>
+                                <li class="qts_lang_item"><a href="http://www.valenciafoodtourspain.com/en/" lang="en" hreflang="en" class="qts_both qtrans_flag qtrans_flag_en"><img width="18" height="12" src="http://www.valenciafoodtourspain.com/wp-content/plugins/qtranslate-x/flags/gb.png" alt="English">English</a></li>
 								<li class="qts_lang_item last-child"><a href="http://www.valenciafoodtourspain.com/ru/" lang="ru" hreflang="ru" class="qts_both qtrans_flag qtrans_flag_ru"><img width="18" height="12" src="http://www.valenciafoodtourspain.com/wp-content/plugins/qtranslate-x/flags/ru.png" alt="Русский">Русский</a></li>
 							</ul>
                         	<nav id="main-menu">
@@ -135,7 +141,7 @@
 									//wp_nav_menu( array('theme_location' => 'primary-menu', 'container'  => false, 'menu_id' => 'menu-main-menu', 'menu_class' => 'menu', 'fallback_cb' => 'dt_theme_default_navigation', 'walker' => new DTFrontEndMenuWalker()));
 									//wp_nav_menu( 'theme_location' => 'primary-menu', 'container'  => false, 'menu_id' => 'menu-main-menu', 'menu_class' => 'menu', 'fallback_cb' => 'dt_theme_default_navigation', 'walker' => new DTFrontEndMenuWalker()));
 									//wp_nav_menu( array( 'items_wrap' => '<ul id="%1$s" class="%2$s"><li><a href="http://www.google.com">go to google</a></li>%3$s</ul>' ) );
-									wp_nav_menu( array('theme_location' => 'primary-menu', 'container'  => false, 'menu_id' => 'menu-main-menu', 'menu_class' => 'menu', 'fallback_cb' => 'dt_theme_default_navigation', 'walker' => new DTFrontEndMenuWalker(), 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s<li class="%2$s hide-desktop"><a href="http://www.valenciafoodtourspain.com/en/" lang="en" hreflang="en" class="qts_both-mobile qtrans_flag qtrans_flag_en">English <img width="18" height="12" src="http://www.valenciafoodtourspain.com/wp-content/plugins/qtranslate-x/flags/gb.png" alt="English"></a></li><li class="%2$s hide-desktop"><a href="http://www.valenciafoodtourspain.com/ru/" lang="ru" hreflang="ru" class="qts_both-mobile qtrans_flag qtrans_flag_ru">Русский <img width="18" height="12" src="http://www.valenciafoodtourspain.com/wp-content/plugins/qtranslate-x/flags/ru.png" alt="Русский"></a></li></ul>' ));
+									wp_nav_menu( array('theme_location' => 'primary-menu', 'container'  => false, 'menu_id' => 'menu-main-menu', 'menu_class' => 'menu', 'fallback_cb' => 'dt_theme_default_navigation', 'walker' => new DTFrontEndMenuWalker(), 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s<li class="%2$s hide-desktop"><a href="https://kiosk.eztix.co/kiosk-gift/269824" class="qts_both qtrans_flag" target="_blank">'.__("GIFT VOUCHER").'</a></li><li class="%2$s hide-desktop">'.__('<a href="http://www.valenciafoodtourspain.com/en/about-me/" class="qts_both qtrans_flag">ABOUT ME</a>').'</li><li class="%2$s hide-desktop"><a href="http://www.valenciafoodtourspain.com/en/" lang="en" hreflang="en" class="qts_both-mobile qtrans_flag qtrans_flag_en">English <img width="18" height="12" src="http://www.valenciafoodtourspain.com/wp-content/plugins/qtranslate-x/flags/gb.png" alt="English"></a></li><li class="%2$s hide-desktop"><a href="http://www.valenciafoodtourspain.com/ru/" lang="ru" hreflang="ru" class="qts_both-mobile qtrans_flag qtrans_flag_ru">Русский <img width="18" height="12" src="http://www.valenciafoodtourspain.com/wp-content/plugins/qtranslate-x/flags/ru.png" alt="Русский"></a></li></ul>' ));
 
 								endif; ?>
 

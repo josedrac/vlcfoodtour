@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2016-11-26 14:22+0100\n"
+"PO-Revision-Date: 2016-11-26 14:35+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ../themes/trendytravel-child\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: _;gettext;_e\n"
+"X-Poedit-SearchPath-0: header.php\n"
+
+#: header.php:49 header.php:50
+msgid "Login"
+msgstr ""
+
+#: header.php:52 header.php:53
+msgid "Register Now"
+msgstr ""
+
+#: header.php:56 header.php:57
+msgid "Logout"
+msgstr ""
+
+#: header.php:123
+msgid "GIFT VOUCHER"
+msgstr "ПОДАРОЧНЫЙ СЕРТИФИКАТ"

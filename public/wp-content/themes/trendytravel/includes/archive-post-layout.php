@@ -2,7 +2,7 @@
 	//PERFORMING BLOG POST LAYOUT...
 	$page_layout = "";
 	$post_layout = "";
-	
+
 	if(is_archive() || is_home()) {
 		$page_layout = dt_theme_option('specialty', 'post-archives-layout');
 		$page_layout = !empty($page_layout) ? $page_layout : 'with-left-sidebar';
@@ -43,7 +43,7 @@
 			$article_class = $article_class." with-sidebar";
 			$feature_image = $feature_image."-sidebar";
 			break;
-		
+
 		case "with-right-sidebar":
 			$article_class = $article_class." with-sidebar";
 			$feature_image = $feature_image."-sidebar";
@@ -56,14 +56,14 @@
 	}
 
 	//PERFORMING QUERY...
-	global $wp_query;	//FOR PAGINATION PURPOSE...	
+	global $wp_query;	//FOR PAGINATION PURPOSE...
 
 	if(have_posts()): $i = 1;
 	 echo '<div class="blog-isotope-wrapper">';
 	 while(have_posts()): the_post();
-	 
+
 	 	$temp_class = "";
-		
+
 		if($i == 1) $temp_class = $article_class." first"; else $temp_class = $article_class;
 		if($i == $column) $i = 1; else $i = $i + 1;
 	 	  $format = get_post_format();
@@ -162,7 +162,7 @@
                       </div>
                       <div class="entry-details">
                           <div class="entry-title">
-                              <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                              <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                           </div>
                           <div class="entry-metadata">
 							 <p class="author"><span class="fa fa-user"> </span><a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author_meta('display_name'); ?></a></p>

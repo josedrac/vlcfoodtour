@@ -6,14 +6,11 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<?php is_dt_theme_moible_view(); ?>
-	<meta name="description" content="<?php bloginfo('description'); ?>"/>
-	<meta name="author" content="designthemes"/>
-    
 	<title><?php dt_theme_public_title(); ?></title>
-    
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+    <meta name="p:domain_verify" content="1bab5b0c08ffad3010ba048226ddcb3e"/>
 
 <?php
 	global $dt_allowed_html_tags;
@@ -63,13 +60,13 @@
 								$template_uri = get_template_directory_uri();
 								$url = dt_theme_option('general', 'logo-url');
 								$url = !empty( $url ) ? $url : $template_uri."/images/logo.png";
-	
+
 								$retina_url = dt_theme_option('general','retina-logo-url');
 								$retina_url = !empty($retina_url) ? $retina_url : $template_uri."/images/logo@2x.png";
-	
+
 								$width = dt_theme_option('general','retina-logo-width');
 								$width = !empty($width) ? $width."px;" : "234px";
-	
+
 								$height = dt_theme_option('general','retina-logo-height');
 								$height = !empty($height) ? $height."px;" : "88px";?>
 								<a href="<?php echo home_url();?>" title="<?php bloginfo('title'); ?>">
@@ -81,7 +78,7 @@
 									<h1 id="site-title"><a href="<?php echo home_url(); ?>" title="<?php bloginfo('title'); ?>"><?php bloginfo('title'); ?></a></h1>
 									<h2 id="site-description"><?php bloginfo('description'); ?></h2>
 								</div><?php
-							endif; ?>                        
+							endif; ?>
 						</div>
                         <div id="primary-menu">
                             <div class="dt-menu-toggle" id="dt-menu-toggle">
@@ -91,7 +88,7 @@
                         	<nav id="main-menu"><?php
                                 if( is_page_template('tpl-onepage.php') ):
                                     $meta = get_post_meta($post->ID, '_tpl_default_settings', true);
-                                    $cmenu = "<li class='menu-item menu-item-type-post_type menu-item-object-page'><a href='".home_url()."/#".$post->post_name."'>".__('Home', 'iamd_text_domain')."</a></li>";								
+                                    $cmenu = "<li class='menu-item menu-item-type-post_type menu-item-object-page'><a href='".home_url()."/#".$post->post_name."'>".__('Home', 'iamd_text_domain')."</a></li>";
                                     wp_nav_menu( array('menu' => $meta['onepage_menu'], 'container'  => false, 'menu_id' => 'menu-main-menu', 'menu_class' => 'onepage_menu menu', 'fallback_cb' => 'dt_theme_default_navigation', 'walker' => new DTOnePageMenuWalker(), 'items_wrap' => '<ul id="%1$s" class="%2$s">'.$cmenu.'%3$s</ul>',));
                                 else:
 									wp_nav_menu( array('theme_location' => 'primary-menu', 'container'  => false, 'menu_id' => 'menu-main-menu', 'menu_class' => 'menu', 'fallback_cb' => 'dt_theme_default_navigation', 'walker' => new DTFrontEndMenuWalker()));

@@ -69,9 +69,9 @@ Text Domain: iamd_text_domain
 	/*----*****---- << Fonts >> ----*****----*/
 
 	body, h1, h2, h3, h4, h5, h6, input[type="text"], input[type="submit"], input[type="password"], input[type="email"], input[type="url"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], textarea, input.text, select, input[type="search"], button, .hotel-details h2 sub, .dt-sc-testimonial .author-detail, .secondary-sidebar .widget_recent_entries h6 a sub, footer .widget_recent_entries h6 a sub, /**** Menu Widget **/ .menu-item-widget-area-container .widget_recent_entries .recent-posts-widget h6 a, .menu-item-widget-area-container .widget_products .product_list_widget li > a, .menu-item-widget-area-container .woocommerce.widget_recent_reviews .product_list_widget li > a, .menu-item-widget-area-container .woocommerce.widget_top_rated_products .product_list_widget li > a,
-.menu-item-widget-area-container .widget.tribe-events-adv-list-widget ol li h4, .menu-item-widget-area-container .widget_rss .rsswidget, .menu-item-widget-area-container .widget_shopping_cart ul.cart_list li > a, .menu-item-widget-area-container .widget_recent_entries h4, .menu-item-widget-area-container .widget.widget_popular_entries ul li h6, .menu-item-widget-area-container .widget_recent_entries .recent-posts-widget h4 a, .menu-item-widget-area-container .tribe_mini_calendar_widget .list-info h2, .widget.widget_popular_entries .recent-gallery-widget ul li h6 { font-family: 'Open Sans', sans-serif; }
+.menu-item-widget-area-container .widget.tribe-events-adv-list-widget ol li h4, .menu-item-widget-area-container .widget_rss .rsswidget, .menu-item-widget-area-container .widget_shopping_cart ul.cart_list li > a, .menu-item-widget-area-container .widget_recent_entries h4, .menu-item-widget-area-container .widget.widget_popular_entries ul li h6, .menu-item-widget-area-container .widget_recent_entries .recent-posts-widget h4 a, .menu-item-widget-area-container .tribe_mini_calendar_widget .list-info h2, .widget.widget_popular_entries .recent-gallery-widget ul li h6 { font-family: 'ptsans', sans-serif; }
 
-	.dt-sc-event > h4, .package-wrapper .package-details h5, .dt-sc-pr-tb-col.type3 .dt-sc-tb-title h3, .entry-post .entry-detail h2, .entry-place-title h5, .dt-travel-place-wrapper .place-details h5, .dt-sc-pack-detail h5, .entry-meta .date, .entry-details .entry-title h2, .widget_recent_entries h4 a, .portfolio-single .column h3, .content-box h4, .widget.widget_popular_entries ul li h6, .hotel-details h2, .overal-rating-wrapper h2, .tribe-events-list h2.tribe-events-list-event-title, .tribe-events-page-title, .secondary-sidebar .widget_recent_entries recent-posts-widget h6 a, footer .widget_recent_entries h6 a, .widget_products .product_list_widget li > a, .woocommerce.widget_recent_reviews .product_list_widget li > a, .woocommerce.widget_top_rated_products .product_list_widget li > a, .tribe_mini_calendar_widget .list-info h2, .widget.tribe-events-adv-list-widget ol li h4, .widget_rss .rsswidget, .widget_shopping_cart ul.cart_list li > a, .product-category.product h3 { font-family: 'Open Sans Condensed', sans-serif; }
+	.dt-sc-event > h4, .package-wrapper .package-details h5, .dt-sc-pr-tb-col.type3 .dt-sc-tb-title h3, .entry-post .entry-detail h2, .entry-place-title h5, .dt-travel-place-wrapper .place-details h5, .dt-sc-pack-detail h5, .entry-meta .date, .entry-details .entry-title h2, .widget_recent_entries h4 a, .portfolio-single .column h3, .content-box h4, .widget.widget_popular_entries ul li h6, .hotel-details h2, .overal-rating-wrapper h2, .tribe-events-list h2.tribe-events-list-event-title, .tribe-events-page-title, .secondary-sidebar .widget_recent_entries recent-posts-widget h6 a, footer .widget_recent_entries h6 a, .widget_products .product_list_widget li > a, .woocommerce.widget_recent_reviews .product_list_widget li > a, .woocommerce.widget_top_rated_products .product_list_widget li > a, .tribe_mini_calendar_widget .list-info h2, .widget.tribe-events-adv-list-widget ol li h4, .widget_rss .rsswidget, .widget_shopping_cart ul.cart_list li > a, .product-category.product h3 { font-family: 'ptsans', sans-serif; }
 
 	.dt-sc-team .team-contact, .holioday-pack-wrapper .holioday-pack h3 { font-family: 'Courgette', cursive; }
 
@@ -2161,7 +2161,7 @@ Text Domain: iamd_text_domain
 		.dt-calendar-container .datepicker-key { float:left; width:100%; margin-top:10px; }
 
 		/*----*****---- << Booking 2 >> ----*****----*/
-		.dt-room-parent { font-family: "Open Sans Condensed",sans-serif; font-size: 18px; font-weight: bold; margin-bottom: 15px; }
+		.dt-room-parent { font-family: "ptsans",sans-serif; font-size: 18px; font-weight: bold; margin-bottom: 15px; }
 		.dt-room-parent a { color: #087dc2; }
 
 		.dt-reserve-wrapper > ul li { display:inline-block; width:100%; border-bottom:1px solid #e3e3e3; padding-bottom:10px; margin-bottom:10px; }
@@ -2172,7 +2172,7 @@ Text Domain: iamd_text_domain
 		.dt-room-item .alignright { position: absolute; right: 0; top: 0; }
 
 		.dt-sc-room-features { display:inline-block; margin-bottom:10px; }
-		.dt-room-item h5 { font-family:"Open Sans Condensed",sans-serif; margin-bottom:10px; font-weight:bold; color:#2c3e50; }
+		.dt-room-item h5 { font-family:"ptsans",sans-serif; margin-bottom:10px; font-weight:bold; color:#2c3e50; }
 		.dt-sc-room-meta ul { padding-left:0; margin-top:0; }
 		.dt-sc-room-meta ul li { display:inline-block; width:100%; padding-bottom:0; }
 		.dt-sc-room-meta ul li i, .dt-sc-room-meta ul li span, .dt-room-item .alignright p span, .dt-reserve-wrapper ul li #dt-netamount, .dt-reserve-wrapper .dt-net-wrapper li #dt-depositamount { color: #000000; font-weight: 600; margin-right: 8px; }
